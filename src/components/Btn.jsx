@@ -3,7 +3,7 @@ import { DataContext } from "../context/DataContextProvider";
 import { useTranslation } from "react-i18next";
 
 
-const Vite = () => {
+const Btn = () => {
     const {toggleLanguage} = useContext(DataContext)
     const[t] = useTranslation("global")
 
@@ -17,4 +17,4 @@ const Vite = () => {
     )
 }
 
-export default Vite
+export default Btn
