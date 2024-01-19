@@ -43,7 +43,7 @@ const Hora = () => {
         )
     }
     return (
-        <div>{location.local_names.es +' - '+ location.country}</div>
+        <div>{location.city +' - '+ location.countryCode}</div>
     )
 }
 
