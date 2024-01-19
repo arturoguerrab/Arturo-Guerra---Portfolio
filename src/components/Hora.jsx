@@ -9,8 +9,10 @@ const Hora = () => {
     
     async function getUser(lat,lng) {
         try {
-            const response = await axios.get(`http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lng}&limit=5&appid=a6ea994bc6d43edf50729c432390cede`);
-            setLocation(response.data[0])
+            // const response = await axios.get(`http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lng}&limit=5&appid=a6ea994bc6d43edf50729c432390cede`);
+            const response = await axios.get(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lng}&localityLanguage=es`)
+            console.log(response.data)
+            setLocation(response.data)
         } catch (error) {
             console.error(error);
         }
@@ -18,10 +20,7 @@ const Hora = () => {
 
     
     useEffect(()=>{
-        console.log('repeat')
-        if( !navigator.geolocation ) {
-            return alert ('Not Working on your current navigator')
-        }
+
         navigator.geolocation.getCurrentPosition(
             ({coords})=>{
                 getUser(coords.latitude,coords.longitude)
@@ -40,7 +39,7 @@ const Hora = () => {
     }
     if(!language){
         return (
-            <div>{location.name +' - '+ location.country}</div>
+            <div>{location.city +' - '+ location.countryCode}</div>
         )
     }
     return (
