@@ -1,18 +1,26 @@
-import React, { useState } from 'react'
+import { useState } from "react";
 
 const Reloj = () => {
-    let time = new Date().toLocaleTimeString()
-    const [currentTime, SetCurrentTime] = useState(time)
+	console.log("run reloj");
+	const currentTime = () => {
+		let time = new Date().toLocaleTimeString([], {
+			hour: "2-digit",
+			minute: "2-digit",
+		});
+		return time;
+	};
+	const currentSeconds = () => {
+		let seconds = new Date().toLocaleTimeString([], { second: "2-digit" });
+		return 60000 - Number(seconds) * 1000;
+	};
 
-    const updateTime = ()=>{
-        let time = new Date().toLocaleTimeString()
-        SetCurrentTime(time)
-    }
+	const [time, SetTime] = useState(currentTime());
 
-    setInterval(updateTime, 1000)
-    return (
-        <div>{currentTime}</div>
-    )
-}
+	setTimeout(() => {
+		SetTime(currentTime());
+	}, currentSeconds());
 
-export default Reloj
+	return <div>{time}</div>;
+};
+
+export default Reloj;
