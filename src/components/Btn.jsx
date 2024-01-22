@@ -9,6 +9,7 @@ const Btn = () => {
 	return (
 		<>
 			<h1>{t("header.hello")}</h1>
+			<h2>{import.meta.env.VITE_HELLO}</h2>
 			<button
 				onClick={() => {
 					toggleLanguage();
