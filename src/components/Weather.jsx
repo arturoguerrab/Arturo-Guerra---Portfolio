@@ -11,7 +11,7 @@ const Weather = () => {
 	async function getWeather(lat, lng) {
 		try {
 			const response = await axios.get(
-				` http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${lat},${lng}&localityLanguage=en`
+				` https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${lat},${lng}&localityLanguage=en`
 			);
 			setWeather(response.data);
 		} catch (error) {
