@@ -2,10 +2,10 @@ import { useContext } from "react";
 import { DataContext } from "../context/DataContextProvider";
 import { useTranslation } from "react-i18next";
 
-const Btn = () => {
+const ToggleLanguage = () => {
 	const { toggleLanguage } = useContext(DataContext);
 	const [t] = useTranslation("global");
-	console.log('run btn')
+	console.log("run btn");
 	return (
 		<>
 			<h1>{t("header.hello")}</h1>
@@ -21,4 +21,4 @@ const Btn = () => {
 	);
 };
 
-export default Btn;
+export default ToggleLanguage;

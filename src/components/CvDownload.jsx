@@ -6,7 +6,7 @@ const CvDownload = () => {
 	const condition = () => {
 		return !language ? "en" : "es";
 	};
-	console.log('run download')
+	console.log("run download");
 	return (
 		<a
 			href={`../../public/ArturoGuerra_${condition()}.pdf`}
