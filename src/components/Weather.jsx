@@ -4,13 +4,14 @@ import axios from "axios";
 
 const Weather = () => {
 	let [weather, setWeather] = useState(null);
+    const apiKey = import.meta.env.VITE_API_WEATHER_KEY
 
 	const { location } = useContext(DataContext);
 
 	async function getWeather(lat, lng) {
 		try {
 			const response = await axios.get(
-				` http://api.weatherapi.com/v1/current.json?key=3019062f14b3484187214954242201&q=${lat},${lng}&localityLanguage=en`
+				` http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${lat},${lng}&localityLanguage=en`
 			);
 			setWeather(response.data);
 		} catch (error) {
