@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { DataContext } from "../context/DataContextProvider";
+import { DataContext } from "../../../../context/DataContextProvider";
 import axios from "axios";
 
 const Weather = () => {
@@ -28,7 +28,7 @@ const Weather = () => {
 	}
 
 	return (
-		<div className="flex bg-slate-100 justify-center items-center px-3 h-[70px] m-3">
+		<div className="flex justify-center items-center h-10">
 			<h2>{weather.current.temp_c} °C</h2>
 			<img src={`https:${weather.current.condition.icon}`} alt="" />
 		</div>

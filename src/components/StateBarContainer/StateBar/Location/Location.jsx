@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { DataContext } from "../context/DataContextProvider";
+import { DataContext } from "../../../../context/DataContextProvider";
 import axios from "axios";
 
 const Location = () => {
@@ -29,7 +29,7 @@ const Location = () => {
 	}
 
 	return (
-		<div className="flex bg-slate-100 justify-center items-center px-3 h-[70px] m-3">
+		<div className="flex justify-center items-center h-10">
 			{currentLocation.city + " - " + currentLocation.countryCode}
 		</div>
 	);

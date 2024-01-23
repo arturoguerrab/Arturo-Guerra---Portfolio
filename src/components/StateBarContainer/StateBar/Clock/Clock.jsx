@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Reloj = () => {
+const Clock = () => {
 	console.log("run reloj");
 	const currentTime = () => {
 		let time = new Date().toLocaleTimeString([], {
@@ -20,7 +20,11 @@ const Reloj = () => {
 		SetTime(currentTime());
 	}, currentSeconds());
 
-	return <div>{time}</div>;
+	return (
+		<div className="col-start-12 flex justify-center items-center">
+			<div className="bg-[#28333E] rounded-[1.25rem] w-16 h-10 flex items-center justify-center text-white">{time}</div>
+		</div>
+	);
 };
 
-export default Reloj;
+export default Clock;

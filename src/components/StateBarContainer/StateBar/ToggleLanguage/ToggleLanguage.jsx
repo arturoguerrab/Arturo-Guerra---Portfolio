@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { DataContext } from "../context/DataContextProvider";
+import { DataContext } from "../../../../context/DataContextProvider";
 import { useTranslation } from "react-i18next";
 
 const ToggleLanguage = () => {
@@ -7,17 +7,16 @@ const ToggleLanguage = () => {
 	const [t] = useTranslation("global");
 	console.log("run btn");
 	return (
-		<>
-			<h1>{t("header.hello")}</h1>
-			<h2>{import.meta.env.VITE_HELLO}</h2>
+		<div className=" flex justify-center items-center">
 			<button
+				className="bg-black opacity-70 h-10 flex items-center text-white"
 				onClick={() => {
 					toggleLanguage();
 				}}
 			>
-				Change
+				{t("header.toogleButton")}
 			</button>
-		</>
+		</div>
 	);
 };
 
