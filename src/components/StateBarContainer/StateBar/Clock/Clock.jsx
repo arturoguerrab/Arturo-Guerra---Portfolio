@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 const Clock = () => {
-	console.log("run reloj");
 	const currentTime = () => {
 		let time = new Date().toLocaleTimeString([], {
 			hour: "2-digit",
@@ -21,8 +20,10 @@ const Clock = () => {
 	}, currentSeconds());
 
 	return (
-		<div className="col-start-12 flex justify-center items-center">
-			<div className="bg-[#28333E] rounded-[1.25rem] w-16 h-10 flex items-center justify-center text-white">{time}</div>
+		<div className="col-span-1 col-start-11 md:col-start-12 flex justify-center items-center ">
+			<div className="bg-[#28333E] rounded-2xl px-2 -me-5 sm:-me-12  md:me-3  h-8 flex items-center justify-center text-white">
+				{time}
+			</div>
 		</div>
 	);
 };

@@ -1,10 +1,8 @@
-import DownloadResume from "./components/StateBarContainer/StateBar/DownloadResume/DownloadResume.jsx";
+
 import Layout from "./components/Layout/Layout.jsx";
-import Location from "./components/StateBarContainer/StateBar/Location/Location.jsx";
-import ToggleLanguage from "./components/StateBarContainer/StateBar/ToggleLanguage/ToggleLanguage.jsx";
-import Weather from "./components/StateBarContainer/StateBar/Location/Weather.jsx";
+
 import DataContextProvider from "./context/DataContextProvider.jsx";
-import Clock from "./components/StateBarContainer/StateBar/Clock/Clock.jsx";
+
 
 function App() {
 	return (

@@ -1,19 +1,28 @@
 import React, { useContext } from "react";
 import { DataContext } from "../../../../context/DataContextProvider";
+import FilterDramaIcon from "@mui/icons-material/FilterDrama";
 
 const DownloadResume = () => {
 	const { language } = useContext(DataContext);
 	const condition = () => {
 		return !language ? "en" : "es";
 	};
-	console.log("run download");
+
+	const buttonDesing =
+		"bg-[#00CC66] text-white rounded-2xl h-8 flex justify-center items-center gap-2 ";
+
 	return (
-		<div className="col-span-2 flex justify-center items-center">
+		<div className="col-start-3 md:col-start-2  col-span-2 sm:col-span-1 // flex justify-center items-center">
 			<a
 				href={`../../public/ArturoGuerra_${condition()}.pdf`}
 				download={`ArturoGuerra_${condition()}.pdf`}
 			>
-				<button className="bg-[#00CC66] text-white rounded-2xl h-10 flex items-center">Download</button>
+				<button className={buttonDesing + "hidden xl:flex"}>
+					<FilterDramaIcon /> Resume
+				</button>
+				<button className={buttonDesing + "flex xl:hidden"}>
+					<FilterDramaIcon />
+				</button>
 			</a>
 		</div>
 	);

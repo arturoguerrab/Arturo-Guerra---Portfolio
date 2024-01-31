@@ -1,22 +1,24 @@
 import React from "react";
-import ToggleLanguage from "./ToggleLanguage/ToggleLanguage";
 import DownloadResume from "./DownloadResume/DownloadResume";
 import LocationContainer from "./Location/LocationContainer";
 import Clock from "./Clock/Clock";
+import ChangeLanguage from "./ChangeLanguage/ChangeLanguage";
 
 const StateBar = () => {
-	const Style = {
-		Size: "h-12 rounded-[1.25rem] mx-10 mt-5  bg-[#FFFFFF]/65 ",
-		Grid: "grid grid-cols-12 grid-rows-1 gap-0",
+	const style = {
+		desing: "h-10 mx-2 md:mx-10 rounded-[1.25rem] bg-[#FFFFFF]/65 ",
+		grid: " grid grid-cols-12 grid-rows-1 gap-0",
 	};
 
 	return (
-		<div className={Style.Size + Style.Grid}>
-			<ToggleLanguage/>
-			<DownloadResume/>
-			<div className="col-span-2 col-start-7">3</div>
-			<LocationContainer/>
-			<Clock/>
+		<div className={style.desing + style.grid}>
+			<ChangeLanguage />
+			<DownloadResume />
+			{/* <div className="col-start-6 lg:col-span-2 lg:col-start-7 bg-purple-400">
+				3
+			</div> */}
+			<LocationContainer />
+			<Clock />
 		</div>
 	);
 };

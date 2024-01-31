@@ -3,7 +3,7 @@ import StateBar from "./StateBar/StateBar";
 
 const StateBarContainer = () => {
 	return (
-		<header className="col-span-12">
+		<header className="col-span-12 mt-4">
             <StateBar/>
         </header>
 	);

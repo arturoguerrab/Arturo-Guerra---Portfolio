@@ -29,7 +29,7 @@ const Location = () => {
 	}
 
 	return (
-		<div className="flex justify-center items-center h-10">
+		<div className="flex justify-center items-center h-10 mx-2 text-sm  ">
 			{currentLocation.city + " - " + currentLocation.countryCode}
 		</div>
 	);
