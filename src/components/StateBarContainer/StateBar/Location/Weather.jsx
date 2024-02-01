@@ -28,8 +28,8 @@ const Weather = () => {
 	}
 
 	return (
-		<div className="flex justify-center items-center h-8 me-3 -ms-5">
-			<img src={`https:${weather.current.condition.icon}`} alt="" className="-me-5"/>
+		<div className="flex justify-around items-center gap-4 h-8 me-3 -ms-5">
+			<img src={`https:${weather.current.condition.icon}`} alt="" className="-me-5 h-10  "/>
 			<h2 className="text-sm ">{weather.current.temp_c} °C</h2>
 		</div>
 	);

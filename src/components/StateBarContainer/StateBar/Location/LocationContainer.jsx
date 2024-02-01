@@ -8,13 +8,13 @@ const LocationContainer = () => {
 		" rounded-[1.25rem] h-8 bg-gradient-to-r from-[#30C1FF] to-[#358CF2] text-white  overflow-hidden ";
 
 	return (
-		<div className="col-start-8 md:col-start-9 me-2 col-span-3 flex items-center justify-center ">
+		<div className="col-start-8 md:col-start-9 me-2 col-span-3 flex items-center justify-between  ">
 			{/* // Marquee Mobile */}
 
-			{/* <Marquee className={marqueeStyles + " hidden "} speed={20}>
+			<Marquee className={marqueeStyles + " flex gap-2 md:hidden  "} speed={20}>
 				<Weather />
 				<Location />
-			</Marquee> */}
+			</Marquee>
 
 			{/* // Marquee Tablets */}
 
