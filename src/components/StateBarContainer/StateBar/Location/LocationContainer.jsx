@@ -5,13 +5,13 @@ import Marquee from "react-fast-marquee";
 
 const LocationContainer = () => {
 	const marqueeStyles =
-		"rounded-[1.25rem] h-8 bg-gradient-to-r from-[#30C1FF] to-[#358CF2] text-white  overflow-hidden ";
+		" rounded-[1.25rem] h-8 bg-gradient-to-r from-[#30C1FF] to-[#358CF2] text-white  overflow-hidden ";
 
 	return (
 		<div className="col-start-8 md:col-start-9 me-2 col-span-3 flex items-center justify-center ">
 			{/* // Marquee Mobile */}
 
-			<Marquee className={marqueeStyles + " md:hidden "} speed={20}>
+			<Marquee className={marqueeStyles + " hidden "} speed={20}>
 				<Weather />
 				<Location />
 			</Marquee>
