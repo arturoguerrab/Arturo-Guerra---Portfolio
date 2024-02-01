@@ -10,11 +10,12 @@ const LocationContainer = () => {
 	return (
 		<div className="col-start-8 md:col-start-9 me-2 col-span-3 flex items-center justify-between  ">
 			{/* // Marquee Mobile */}
-
-			<Marquee className={marqueeStyles + " flex gap-2 md:hidden  "} speed={20}>
-				<Weather />
-				<Location />
-			</Marquee>
+			<div className=" flex gap-2 md:hidden  ">
+				<Marquee className={marqueeStyles +"flex gap-2 "} speed={20}>
+					<Weather />
+					<Location />
+				</Marquee>
+			</div>
 
 			{/* // Marquee Tablets */}
 
