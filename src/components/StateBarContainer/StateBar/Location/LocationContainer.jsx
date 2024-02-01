@@ -11,7 +11,7 @@ const LocationContainer = () => {
 		<div className="col-start-8 md:col-start-9 me-2 col-span-3 flex items-center justify-between  ">
 			{/* // Marquee Mobile */}
 			<div className="md:hidden w-full  ">
-				<Marquee className={marqueeStyles +"flex gap-2 "} speed={20}>
+				<Marquee className={marqueeStyles + "flex gap-2 "} speed={20}>
 					<Weather />
 					<Location />
 				</Marquee>
@@ -20,12 +20,16 @@ const LocationContainer = () => {
 			{/* // Marquee Tablets */}
 
 			<div
-				className={marqueeStyles + " hidden md:flex justify-evenly  w-full xl:hidden"}
+				className={
+					marqueeStyles + " hidden md:flex justify-evenly  w-full xl:hidden"
+				}
 			>
 				<Weather />
-				<Marquee speed={20} className="w-2/4 overflow-hidden ">
-					<Location />
-				</Marquee>
+				<div className=" w-2/5">
+					<Marquee speed={20} className="flex items-center h-full overflow-hidden ">
+						<Location />
+					</Marquee>
+				</div>
 			</div>
 
 			{/* // Marquee desktop */}
