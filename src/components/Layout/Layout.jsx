@@ -6,10 +6,10 @@ import DashboardContainer from "../DashboardContainer/DashboardContainer";
 
 const Layout = ({ children }) => {
 	const style = {
-		grid:"grid grid-cols-12 grid-rows-12 gap-0 w-screen "
+		grid:"grid grid-cols-12 grid-rows-12 gap-0 w-screen min-h-full sm:h-screen "
 	}
 	return (
-		<div className={ style.grid + "bg-cover h-full bg-[url('https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/qgtzaznalvcvobbq5cbp')]"}>
+		<div className={ style.grid + "bg-cover bg-[url('https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/qgtzaznalvcvobbq5cbp')]"}>
 			<StateBarContainer />
 
 			<SideBarContainer />

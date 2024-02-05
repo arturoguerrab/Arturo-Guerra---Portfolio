@@ -2,7 +2,7 @@ import React from "react";
 
 const SideBarContainer = () => {
   const StylesAside ={
-    mobile:'col-span-12 row-start-12 overflow-hidden flex justify-center items-center <mb-2></mb-2> ',
+    mobile:'col-span-12 row-start-12 overflow-hidden flex justify-center items-center mb-4 ',
     desktop:"xl:row-span-11 xl:col-start-12 xl:row-start-2" 
   }
 
