@@ -17,10 +17,24 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-html{
+::-webkit-scrollbar {
+	width: 5px;
+}
+::-webkit-scrollbar-track {
+	background: rgba(255, 255, 255, 0.288);
+	border-radius: 1.25rem;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(255, 255, 255, 0.288);
+	border-radius: 1.25rem;
+	border: 1em solid transparent;
+}
+
+html {
 	height: 100%;
 }
-body{
+body {
 	height: 100%;
 }
 

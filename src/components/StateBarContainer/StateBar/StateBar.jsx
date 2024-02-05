@@ -6,7 +6,7 @@ import ChangeLanguage from "./ChangeLanguage/ChangeLanguage";
 
 const StateBar = () => {
 	const style = {
-		desing: "h-10 mx-2 md:mx-10 rounded-[1.25rem] bg-[#FFFFFF]/65 ",
+		desing: "h-10 mx-2 md:mx-10 rounded-[1.25rem] bg-[#FFFFFF]/65 mt-3",
 		grid: " grid grid-cols-12 grid-rows-1 gap-0",
 	};
 
