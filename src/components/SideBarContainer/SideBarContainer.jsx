@@ -8,7 +8,7 @@ const SideBarContainer = () => {
 
 	return (
 		<aside className={StylesAside.mobile + StylesAside.desktop}>
-			<div className="w-80 h-12 xl:w-12 xl:h-80 flex xl:flex-col items-center justify-around rounded-[1.25rem] bg-[#FFFFFF]/65 ">
+			<div className="w-80 h-12 xl:w-12 xl:h-80 flex xl:flex-col items-center justify-around rounded-xl glassmorphism ">
 				<div className="bg-black w-10 h-10">1</div>
 				<div className="bg-red-400 w-10 h-10">1</div>
 				<div className="bg-green-400 w-10 h-10">1</div>

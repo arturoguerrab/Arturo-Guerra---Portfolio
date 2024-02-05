@@ -9,7 +9,7 @@ const DownloadResume = () => {
 	};
 
 	const buttonDesing =
-		"bg-[#00CC66] text-white rounded-2xl h-8 flex w-14 xl:w-28 justify-center items-center gap-2 ";
+		"bg-[#00CC66] text-white rounded-xl h-8 flex w-14 xl:w-28 justify-center items-center gap-2 ";
 
 	return (
 		<div className="col-start-3 md:col-start-2  col-span-2 sm:col-span-1 // flex justify-center items-center">
