@@ -5,6 +5,7 @@ import Backdrop from "@mui/material/Backdrop";
 import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
 import Button from "@mui/material/Button";
+import './changeBg.css'
 
 const ChangeBg = ({ props }) => {
 	const style = {
@@ -54,9 +55,7 @@ const ChangeBg = ({ props }) => {
 								onClick={() => {
 									props.setBackground(setting);
 								}}
-								className={`bg-[url("${props.littlePicSelector(
-									setting
-								)}")] h-20 rounded-xl bg-cover text-white font-semibold bg-no-repeat bg-center`}
+								className={`${setting} background h-20 rounded-xl text-white font-semibold`}
 							>
 								{setting}
 							</button>

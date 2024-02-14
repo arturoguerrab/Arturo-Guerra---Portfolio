@@ -12,23 +12,11 @@ const ChangeBgContainer = () => {
 	const handleOpen = () => setOpen(true);
 	const handleClose = () => setOpen(false);
 
-	const littlePicSelector = (setting) => {
-		switch (setting) {
-			case "onePiece":
-				return "https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/ea6lanvn9rnatva9ws4m";
-			case "waves":
-				return "https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/qgtzaznalvcvobbq5cbp";
-			case "shapes":
-				return "https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/cceomr1gao9nstahgniy";
-		}
-	};
-
 	const props = {
 		setBackground,
 		settings,
 		handleClose,
 		handleOpen,
-		littlePicSelector,
 		open,
 	};
 	return <ChangeBg props={props} />;
