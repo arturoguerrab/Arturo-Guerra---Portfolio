@@ -1,18 +1,15 @@
-.background{
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+.backgroundLil {
+	background-size: cover;
+	background-position: center;
 }
 .onePiece {
-    background-image: url('https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/ea6lanvn9rnatva9ws4m');
-} 
+	background-image: url("https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/ea6lanvn9rnatva9ws4m");
+}
 
 .waves {
-    background-image: url('https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/qgtzaznalvcvobbq5cbp');
-
-} 
+	background-image: url("https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/qgtzaznalvcvobbq5cbp");
+}
 
 .shapes {
-    background-image: url('https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/cceomr1gao9nstahgniy');
-
-} 
+	background-image: url("https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/cceomr1gao9nstahgniy");
+}

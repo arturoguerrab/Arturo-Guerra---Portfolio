@@ -55,7 +55,7 @@ const ChangeBg = ({ props }) => {
 								onClick={() => {
 									props.setBackground(setting);
 								}}
-								className={`${setting} background h-20 rounded-xl text-white font-semibold`}
+								className={` ${setting} backgroundLil h-20 rounded-xl text-white font-semibold`}
 							>
 								{setting}
 							</button>
