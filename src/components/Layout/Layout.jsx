@@ -1,15 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import StateBar from "../StateBar/StateBar";
 import DownBar from "../DownBar/DownBar";
 import DashboardContainer from "../DashboardContainer/DashboardContainer";
+import { DataContext } from "../../context/DataContextProvider";
+import './layout.css'
 
 const Layout = ({ children }) => {
+	const { background } = useContext(DataContext);
+
 	const style = {
 		desing:
-			"px-2 bg-cover bg-fixed bg-[url('https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/ea6lanvn9rnatva9ws4m')]",
+			`px-2 flex justify-center background ${background}`,
 	};
 	return (
-		<div className={style.desing + ' flex justify-center'}>
+		<div className={style.desing}>
 			<StateBar />
 
 			<DashboardContainer>{children}</DashboardContainer>

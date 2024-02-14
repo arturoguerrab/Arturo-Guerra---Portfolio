@@ -5,7 +5,7 @@ const DownloadResume = ({ props }) => {
 	const style = {
 		desing:"bg-[#00CC66] text-white rounded-xl flex justify-center items-center ",
 		gridMD:" sm:col-span-2 ",
-		gridLG:"xl:col-span-3 ",
+		gridLG:"xl:col-span-5 ",
 	};
 
 	return (
@@ -14,9 +14,9 @@ const DownloadResume = ({ props }) => {
 			download={`ArturoGuerra_${props.condition()}.pdf`}
 			className={style.desing + style.gridMD + style.gridLG + ' '}
 		>
-			<button className={"flex gap-1 bg-transparent"}>
+			<button className={"flex gap-1.5 bg-transparent"}>
 				<FilterDramaIcon />
-				<span className="hidden sm:inline">Resume</span>
+				<span className="hidden font-semibold sm:inline">Resume</span>
 			</button>
 		</a>
 	);

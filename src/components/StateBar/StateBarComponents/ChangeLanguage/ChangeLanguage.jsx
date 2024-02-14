@@ -4,17 +4,17 @@ import TranslateIcon from "@mui/icons-material/Translate";
 const ChangeLanguage = ({ props }) => {
 	const style = {
 		desing:
-			"rounded-xl text-white bg-gray-800 flex justify-center items-center ",
-		gridLG: " xl:col-span-1 ",
+			"rounded-xl text-white bg-gray-800 flex justify-center items-center gap-1.5 ",
+		gridLG: " xl:col-span-2 ",
 	};
 
 	return (
 		<button
-			className={style.desing + style.gridLG + '  '}
+			className={style.desing + style.gridLG + ''}
 			onClick={props.handleChange}
 		>
 			<TranslateIcon />{" "}
-			<span className="hidden">{!props.language ? "en" : "es"}</span>
+			<span className="hidden md:inline text-xs font-semibold w-1/4">{!props.language ? "EN" : "ES"}</span>
 		</button>
 	);
 };

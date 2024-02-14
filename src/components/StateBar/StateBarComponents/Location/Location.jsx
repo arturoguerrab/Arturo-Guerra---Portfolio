@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 const Location = ({ props }) => {
 	const style = {
 		marqueeStyles:
-			"rounded-xl bg-gradient-to-r from-[#30C1FF] to-[#358CF2] text-white overflow-hidden ",
+			"rounded-xl bg-gradient-to-r from-[#30C1FF] to-[#358CF2] text-white overflow-hidden font-semibold ",
 		gridSM: "col-span-2 ",
 		gridMD: "sm:col-span-3 sm:col-start-9 ",
 		gridXL: "xl:col-span-2 xl:col-start-10"

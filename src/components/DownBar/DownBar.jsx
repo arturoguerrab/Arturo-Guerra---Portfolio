@@ -4,6 +4,7 @@ import ImportContactsRoundedIcon from '@mui/icons-material/ImportContactsRounded
 import SmsRoundedIcon from '@mui/icons-material/SmsRounded';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { Divider } from "@mui/material";
 
 const DownBar = () => {
 	const style = {
@@ -20,6 +21,7 @@ const DownBar = () => {
 					<div className={ style.icons + "bg-sky-600 "}><ImportContactsRoundedIcon/></div>
 					<div className={ style.icons + "bg-sky-400 "}><SmsRoundedIcon/></div>
 				</div>
+				<Divider orientation="vertical" variant="middle" flexItem />
 				<div className="grid grid-cols-2 gap-1.5 p-1.5 w-2/5">
 					<div className={ style.icons + " bg-gray-700"}><GitHubIcon/></div>
 					<div className={ style.icons + "bg-blue-500 "}><LinkedInIcon/></div>
