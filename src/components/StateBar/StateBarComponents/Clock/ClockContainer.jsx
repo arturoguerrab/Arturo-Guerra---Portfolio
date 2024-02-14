@@ -1,11 +1,13 @@
+import React from "react";
 import { useState } from "react";
+import Clock from "./Clock";
 
-const Clock = () => {
+const ClockContainer = () => {
 	const currentTime = () => {
 		let time = new Date().toLocaleTimeString("en-US", {
 			hour: "2-digit",
 			minute: "2-digit",
-			hour12: false
+			hour12: false,
 		});
 		return time;
 	};
@@ -20,13 +22,9 @@ const Clock = () => {
 		SetTime(currentTime());
 	}, currentSeconds());
 
-	return (
-		<div className="col-span-1 col-start-11 md:col-start-12 flex justify-center items-center ">
-			<div className="bg-[#28333E] rounded-xl px-2 -me-5 sm:-me-12  md:me-3  h-8 flex items-center justify-center text-white">
-				{time}
-			</div>
-		</div>
-	);
+	const props = { time };
+
+	return <Clock props={props} />;
 };
 
-export default Clock;
+export default ClockContainer;

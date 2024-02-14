@@ -1,20 +1,20 @@
 import React from "react";
-import StateBarContainer from "../StateBarContainer/StateBarContainer";
-import SideBarContainer from "../SideBarContainer/SideBarContainer";
+import StateBar from "../StateBar/StateBar";
+import DownBar from "../DownBar/DownBar";
 import DashboardContainer from "../DashboardContainer/DashboardContainer";
-
 
 const Layout = ({ children }) => {
 	const style = {
-		grid:"grid grid-cols-12 grid-rows-12 gap-0 w-screen h-dvh "
-	}
+		desing:
+			"px-2 bg-cover bg-fixed bg-[url('https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/ea6lanvn9rnatva9ws4m')]",
+	};
 	return (
-		<div className={ style.grid + "bg-cover bg-[url('https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/ea6lanvn9rnatva9ws4m')]"}>
-			<StateBarContainer />
-
-			<SideBarContainer />
+		<div className={style.desing + ' flex justify-center'}>
+			<StateBar />
 
 			<DashboardContainer>{children}</DashboardContainer>
+
+			<DownBar />
 		</div>
 	);
 };

@@ -17,10 +17,10 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
 	width: 5px;
-}
-::-webkit-scrollbar-track {
+} */
+/* ::-webkit-scrollbar-track {
 	background: rgba(255, 255, 255, 0.288);
 	border-radius: 1.25rem;
 }
@@ -29,14 +29,7 @@
 	background: rgba(255, 255, 255, 0.288);
 	border-radius: 1.25rem;
 	border: 1em solid transparent;
-}
-
-html {
-	height: 100%;
-}
-body {
-	height: 100%;
-}
+}  */
 
 .glassmorphism {
 	background: rgba(255, 255, 255, 0.4);
@@ -50,9 +43,6 @@ body {
 	:root {
 		color: #213547;
 		background-color: #ffffff;
-	}
-	a:hover {
-		color: #747bff;
 	}
 	button {
 		background-color: #f9f9f9;
