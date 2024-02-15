@@ -7,7 +7,7 @@ import ChangeBgContainer from "./StateBarComponents/ChangeBg/ChangeBgContainer";
 
 const StateBar = () => {
 	const style = {
-		header: "fixed top-2 left-0 w-full px-2 h-12 z-10 flex justify-center",
+		header: "fixed top-4 left-0 w-full px-2 h-12 z-10 flex justify-center",
 		stateBar: "h-full w-full rounded-xl glassmorphism max-w-[1920px] ",
 		gridSM: "grid grid-cols-6 gap-1.5 p-1.5 ",
 		gridMD: "sm:grid-cols-12 ",

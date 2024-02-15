@@ -6,7 +6,7 @@ function App() {
 	return (
 		<DataContextProvider>
 			<Layout>
-				<div className="grid grid-cols-7 grid-rows-5 gap-2 h-[666px] pb-2">
+				<div className="grid grid-cols-7 grid-rows-5 gap-5 h-[666px] pb-5">
 					<div className="col-span-3 row-span-2 w-full h-full glassmorphism">
 						1
 					</div>
@@ -23,7 +23,7 @@ function App() {
 						5
 					</div>
 				</div>
-				<div className="grid grid-cols-7 grid-rows-5 gap-2 h-[666px] pb-2">
+				<div className="grid grid-cols-7 grid-rows-5 gap-5 h-[666px] pb-5">
 					<div className="col-span-3 row-span-2 w-full h-full glassmorphism">
 						1
 					</div>
@@ -40,7 +40,7 @@ function App() {
 						5
 					</div>
 				</div>
-				<div className="grid grid-cols-7 grid-rows-5 gap-2 h-[666px] pb-2">
+				<div className="grid grid-cols-7 grid-rows-5 gap-5 h-[666px] pb-5">
 					<div className="col-span-3 row-span-2 w-full h-full glassmorphism">
 						1
 					</div>
@@ -57,7 +57,7 @@ function App() {
 						5
 					</div>
 				</div>
-				<div className="grid grid-cols-7 grid-rows-5 gap-2 h-[666px] pb-2">
+				<div className="grid grid-cols-7 grid-rows-5 gap-5 h-[666px] pb-5">
 					<div className="col-span-3 row-span-2 w-full h-full glassmorphism">
 						1
 					</div>
@@ -74,7 +74,7 @@ function App() {
 						5
 					</div>
 				</div>
-				<div className="grid grid-cols-7 grid-rows-5 gap-2 h-[666px]">
+				<div className="grid grid-cols-7 grid-rows-5 gap-5 h-[666px]">
 					<div className="col-span-3 row-span-2 w-full h-full glassmorphism">
 						1
 					</div>
