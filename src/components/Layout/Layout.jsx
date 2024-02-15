@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
 	};
 	return (
 		<div className={style.desing}>
-			<div className={`h-dvh w-dvw fixed ${background} -z-10`}>
+			<div className={`h-dvh w-dvw fixed bg-center ${background} -z-10`}>
 
 			</div>
 			<StateBar />
