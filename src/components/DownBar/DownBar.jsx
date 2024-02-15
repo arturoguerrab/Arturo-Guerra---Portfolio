@@ -8,7 +8,7 @@ import { Divider } from "@mui/material";
 
 const DownBar = () => {
 	const style = {
-		footer: "fixed bottom-2 w-full left-0 h-14 flex justify-center z-10",
+		footer: "fixed bottom-4 w-full left-0 h-14 flex justify-center z-10",
 		downBar:"glassmorphism w-72 h-full rounded-xl flex justify-evenly gap-1.5 ",
 		icons: " flex justify-center items-center rounded-xl text-white "
 	};

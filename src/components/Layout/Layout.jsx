@@ -10,10 +10,13 @@ const Layout = ({ children }) => {
 
 	const style = {
 		desing:
-			`px-2 flex justify-center bg ${background}`,
+		`px-2 flex justify-center  `,
 	};
 	return (
-		<div className={style.desing + ' bg-fixed'}>
+		<div className={style.desing}>
+			<div className={`h-dvh w-dvw fixed ${background} -z-10`}>
+
+			</div>
 			<StateBar />
 
 			<DashboardContainer>{children}</DashboardContainer>
