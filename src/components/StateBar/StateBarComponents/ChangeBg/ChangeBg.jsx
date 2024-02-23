@@ -5,13 +5,13 @@ import Backdrop from "@mui/material/Backdrop";
 import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
 import Button from "@mui/material/Button";
-import './changeBg.css'
+import "./changeBg.css";
 
 const ChangeBg = ({ props }) => {
 	const style = {
 		desing:
 			"bg-gray-800 text-white rounded-xl flex justify-center items-center ",
-		gridXL: "xl:col-span-2 ",
+		gridLG: "lg:col-span-2 ",
 		modal: {
 			position: "absolute",
 			top: "50%",
@@ -29,7 +29,7 @@ const ChangeBg = ({ props }) => {
 		},
 	};
 	return (
-		<div className={style.desing + style.gridXL}>
+		<div className={style.desing + style.gridLG}>
 			<Button className="w-full h-full rounded-xl " onClick={props.handleOpen}>
 				<BrushIcon className="text-white " />
 			</Button>

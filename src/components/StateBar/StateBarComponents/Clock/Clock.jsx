@@ -4,15 +4,10 @@ const Clock = ({ props }) => {
 	const style = {
 		desing:
 			"bg-[#28333E] text-white rounded-xl flex justify-center items-center font-semibold ",
-		gridSM: "col-start-6 ",
-		gridMD: "sm:col-start-12 ",
+		gridLG: " lg:col-span-2 ",
 	};
 
-	return (
-		<div className={style.desing + style.gridSM + style.gridMD}>
-			{props.time}
-		</div>
-	);
+	return <div className={style.desing + style.gridLG}>{props.time}</div>;
 };
 
 export default Clock;
