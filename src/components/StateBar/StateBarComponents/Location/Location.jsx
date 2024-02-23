@@ -5,7 +5,7 @@ const Location = ({ props }) => {
 	const style = {
 		marqueeStyles:
 			"rounded-xl bg-gradient-to-r from-[#30C1FF] to-[#358CF2] text-white overflow-hidden font-semibold ",
-		gridSM: "col-span-2 ",
+		grid: "col-span-2 ",
 		gridSM: "sm:col-span-3 ",
 		gridLG: "lg:col-span-6 ",
 	};
@@ -14,7 +14,11 @@ const Location = ({ props }) => {
 		return (
 			<Marquee
 				className={
-					style.marqueeStyles + style.gridSM + style.gridSM + style.gridLG
+					style.marqueeStyles +
+					style.grid +
+					style.gridSM +
+					style.gridSM +
+					style.gridLG
 				}
 				speed={20}
 			>
@@ -26,7 +30,11 @@ const Location = ({ props }) => {
 	return (
 		<Marquee
 			className={
-				style.marqueeStyles + style.gridSM + style.gridSM + style.gridLG
+				style.marqueeStyles +
+				style.grid +
+				style.gridSM +
+				style.gridSM +
+				style.gridLG
 			}
 			speed={20}
 		>
