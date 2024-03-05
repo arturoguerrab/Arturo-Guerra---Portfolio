@@ -5,14 +5,14 @@ import RigthSide from "./StateBarComponents/RigthSide";
 const StateBar = () => {
 	const style = {
 		header:
-			"fixed top-4 left-0 w-full px-2 xl:px-10 h-12 z-10 flex justify-center",
-		stateBar: "h-full w-full rounded-xl glassmorphism max-w-[2560px] ",
+			"fixed w-full px-4 sm:px-8 h-12 z-10 glassmorphism",
+		stateBar: "h-full ",
 		grid: "grid grid-cols-6 gap-1.5 p-1.5 ",
 		gridSM: "sm:grid-cols-12 ",
 	};
 	return (
 		<header className={style.header}>
-			<div className={style.stateBar + style.grid + style.gridSM}>
+			<div className={style.stateBar + style.grid + style.gridSM + '' }>
 				{/* Translate - Resume - ChangeBG */}
 				<LeftSide />
 

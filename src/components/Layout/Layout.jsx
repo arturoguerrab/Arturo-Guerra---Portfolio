@@ -9,18 +9,15 @@ const Layout = ({ children }) => {
 	const { background } = useContext(DataContext);
 
 	const style = {
-		desing: `px-2 flex justify-center`,
+		desing: `sm:px-8 flex justify-center`,
 		bg: `h-dvh w-dvw fixed bg-center ${background} -z-10`,
 	};
 	return (
 		<div className={style.desing}>
-			{/* Fixed elements */}
 			<div className={style.bg} />
 			<StateBar />
-			<DownBar />
-			{/* Fixed Elements */}
-
 			<DashboardContainer>{children}</DashboardContainer>
+			<DownBar />
 		</div>
 	);
 };
