@@ -1,21 +1,21 @@
 import React from "react";
-import TranslateIcon from "@mui/icons-material/Translate";
+import Icon from "../../../utils/Icon";
 
 const ChangeLanguage = ({ props }) => {
-	const style = {
-		desing:
-			"rounded-xl text-white bg-gray-800 flex justify-center items-center gap-1.5 ",
-		gridLG: "lg:col-span-2 ",
-		span: "hidden xl:inline text-xs font-semibold w-1/4 ",
-	};
-
 	return (
 		<button
-			className={style.desing + style.gridLG}
+			className="bg-pblack flex justify-center items-center w-12 h-9 md:w-20 md:gap-1.5 rounded-xl "
 			onClick={props.handleChange}
 		>
-			<TranslateIcon />{" "}
-			<span className={style.span}>{!props.language ? "EN" : "ES"}</span>
+			<Icon
+				src={
+					"https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/StateBar/kue09wnxh4xvv3ogdwkh"
+				}
+				alt={"translate icon"}
+			/>
+			<span className="text-pwhite font-semibold text-xs lg:text-sm hidden md:inline ">
+				{!props.language ? "EN" : "ES"}
+			</span>
 		</button>
 	);
 };

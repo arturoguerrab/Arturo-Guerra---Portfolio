@@ -3,11 +3,12 @@ import Presentation from "./Presentation/Presentation";
 import Skills from "./Skills/Skills";
 import Jobs from "./Jobs/Jobs";
 import Education from "./Education/Education";
+import SectionDivider from "../../utils/SectionDivider";
 
 const  Profile = () => {
 	return (
-		<div id="profile">
-			<div className="glassmorphism h-11 my-8 rounded-2xl ">profile</div>
+		<div id="profile" className="mt-8">
+			<SectionDivider section={'profile'} title={'Profile'}/>
 			<div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 grid-rows-a6 md:grid-rows-a3 lg:grid-rows-a5 xl:grid-rows-a3 gap-8 pb-8">
 				<div className="row-start-1 row-span-2 lg:col-span-2">
 					<Presentation />

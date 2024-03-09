@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
 
 	const style = {
 		desing: `sm:px-8 flex justify-center`,
-		bg: `h-dvh w-dvw fixed bg-center ${background} -z-10`,
+		bg: `h-dvh w-dvw fixed bg-cover bg-center ${background} -z-10`,
 	};
 	return (
 		<div className={style.desing}>

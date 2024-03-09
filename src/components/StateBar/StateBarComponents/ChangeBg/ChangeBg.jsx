@@ -6,12 +6,10 @@ import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
 import Button from "@mui/material/Button";
 import "./changeBg.css";
+import Icon from "../../../utils/Icon";
 
 const ChangeBg = ({ props }) => {
 	const style = {
-		desing:
-			"bg-gray-800 text-white rounded-xl flex justify-center items-center ",
-		gridLG: "lg:col-span-2 ",
 		modal: {
 			position: "absolute",
 			top: "50%",
@@ -29,9 +27,14 @@ const ChangeBg = ({ props }) => {
 		},
 	};
 	return (
-		<div className={style.desing + style.gridLG}>
-			<Button className="w-full h-full rounded-xl " onClick={props.handleOpen}>
-				<BrushIcon className="text-white " />
+		<div className="bg-pblack overflow-hidden rounded-xl flex justify-center items-center w-12 md:w-16 ">
+			<Button className="h-full w-full rounded-xl " onClick={props.handleOpen}>
+				<Icon
+					src={
+						"https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/StateBar/xh67cuikxp084wy0tony"
+					}
+					alt={"change background icon"}
+				/>
 			</Button>
 			<Modal
 				keepMounted

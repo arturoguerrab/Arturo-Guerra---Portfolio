@@ -3,16 +3,9 @@ import LeftSide from "./StateBarComponents/LeftSide";
 import RigthSide from "./StateBarComponents/RigthSide";
 
 const StateBar = () => {
-	const style = {
-		header:
-			"fixed w-full px-4 sm:px-8 h-12 z-10 glassmorphism",
-		stateBar: "h-full ",
-		grid: "grid grid-cols-6 gap-1.5 p-1.5 ",
-		gridSM: "sm:grid-cols-12 ",
-	};
 	return (
-		<header className={style.header}>
-			<div className={style.stateBar + style.grid + style.gridSM + '' }>
+		<header className="fixed w-full h-12 px-1.5 sm:px-8 z-10 glassmorphism">
+			<div className="h-12 flex justify-between items-center">
 				{/* Translate - Resume - ChangeBG */}
 				<LeftSide />
 

@@ -1,23 +1,24 @@
 import React from "react";
 import FilterDramaIcon from "@mui/icons-material/FilterDrama";
+import Icon from "../../../utils/Icon";
 
 const DownloadResume = ({ props }) => {
-	const style = {
-		desing:
-			"bg-[#00CC66] text-white rounded-xl flex justify-center items-center ",
-		gridSM: " sm:col-span-2 ",
-		gridLG: "lg:col-span-4 ",
-	};
-
 	return (
 		<a
 			href={`../../public/ArturoGuerra_${props.condition()}.pdf`}
 			download={`ArturoGuerra_${props.condition()}.pdf`}
-			className={style.desing + style.gridSM + style.gridLG}
+			className="bg-pgreen w-12 sm:w-28 flex justify-center rounded-xl "
 		>
-			<button className={"flex gap-1.5 bg-transparent"}>
-				<FilterDramaIcon />
-				<span className="hidden font-semibold sm:inline">Resume</span>
+			<button className="flex items-center gap-1.5 bg-transparent rounded-xl ">
+				<Icon
+					src={
+						"https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/StateBar/kue09wnxh4xvv3ogdwkh"
+					}
+					alt={"Download resume icon"}
+				/>
+				<span className="hidden sm:inline text-sm lg:text-base font-semibold  text-pwhite ">
+					Resume
+				</span>
 			</button>
 		</a>
 	);
