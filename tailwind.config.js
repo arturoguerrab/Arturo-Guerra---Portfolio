@@ -7,7 +7,7 @@ export default {
 				pblack: "#121212",
 				pwhite: "#f5f5f5",
 				pgreen: "#00cc66",
-				pgray: "#3f3cbb",
+				pgray: "#9ba5b7",
 			},
 			screens: { lnd: { raw: "(max-height: 666px)  " } },
 			gridTemplateRows: {

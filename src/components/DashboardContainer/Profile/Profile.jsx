@@ -1,9 +1,9 @@
 import React from "react";
 import Presentation from "./Presentation/Presentation";
-import Skills from "./Skills/Skills";
 import Jobs from "./Jobs/Jobs";
 import Education from "./Education/Education";
 import SectionDivider from "../../utils/SectionDivider";
+import SkillsContainer from "./Skills/SkillsContainer";
 
 const  Profile = () => {
 	return (
@@ -17,7 +17,7 @@ const  Profile = () => {
 					<Jobs/>
 				</div>
 				<div className="row-span-2 lg:col-span-2 lg:row-start-4 xl:col-span-1 xl:row-start-1 xl:col-start-3 2xl:col-span-2 2xl:row-start-2 rounded-3xl   ">
-					<Skills />
+					<SkillsContainer />
 				</div>
 				<div className="xl:row-start-3 2xl:col-span-2 ">
 					<Education/>

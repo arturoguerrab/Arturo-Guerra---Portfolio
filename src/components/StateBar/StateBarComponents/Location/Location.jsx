@@ -23,7 +23,6 @@ const Location = ({ props }) => {
 					src={`https:${props.weather.current.condition.icon}`}
 					alt="Weather condition image"
 					className="h-10"
-					loading="lazy"
 				/>
 				<h2>{props.weather.current.temp_c} °C</h2>
 			</div>

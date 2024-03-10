@@ -1,24 +1,81 @@
-import React from 'react'
+import React from "react";
 
 const Jobs = () => {
-  return (
-    <div className='h-full'>
-        <div className='bg-black h-2/6 flex justify-between p-5  rounded-t-3xl '>
-            <div>
-                <h3 className='text-green-400 font-semibold text-xs'>EXPERIENCE</h3>
-                <h2 className="font-bold text-xl text-white">Jobs</h2>
-            </div>
-        <img
-					className="w-6 h-6"
-					src="https://cdn-icons-png.freepik.com/512/6915/6915987.png"
-					alt=""
+	return (
+		<div className="h-full bg-pblack rounded-3xl">
+			{/* FIRST SECTION */}
+			<div className="h-2/6 p-5 xl:p-8 flex justify-between ">
+				<div>
+					<h3 className="text-pgreen font-semibold text-xs xl:text-base ">
+						EXPERIENCE
+					</h3>
+					<h2 className="font-bold text-2xl xl:text-3xl text-pwhite">Jobs</h2>
+				</div>
+				<img
+					className="h-5"
+					src="https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/iconos%20de%20tarjeta/vg0i2dswyjxppzvqnsi5"
+					alt="suitcase icon"
+					loading="lazy"
 				/>
-        </div>
-        <div className='bg-[#000000b5] h-4/6 rounded-b-3xl '>
+			</div>
 
-        </div>
-    </div>
-  )
-}
+			{/* SECOND SECTION */}
+			<div className=" h-4/6 p-8 pt-0 xl:p-8 text-sm text-pgray flex flex-col xl:flex-row xl:justify-between ">
+				{/* FIRST ELEMENT */}
+				<div className="flex  gap-6 xl:flex-col xl:gap-0.5">
+					<div className="flex items-center w-16 justify-between gap-6 xl:flex-row-reverse">
+						<span>2023</span>
+						<img
+							src="https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/illnlzrwjxt1qiknrfs3"
+							alt="dot icon"
+							loading="lazy"
+							className="h-2"
+						/>
+					</div>
+					<div className="">
+						<h3 className="font-medium text-pwhite">
+							Apple Expert
+						</h3>
+						<span>iPoint, Apple APR</span>
+					</div>
+				</div>
 
-export default Jobs
+				{/* SECOND ELEMENT */}
+				<div className="flex gap-6 xl:flex-col xl:gap-0.5">
+					<div className="flex items-center w-16 justify-between gap-6 xl:flex-row-reverse">
+						<span>2022</span>
+						<img
+							src="https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/illnlzrwjxt1qiknrfs3"
+							alt="dot icon"
+							loading="lazy"
+							className="h-2"
+						/>
+					</div>
+					<div className="">
+						<h3 className="font-medium text-pwhite">Commercial Advisor</h3>
+						<span>iPoint, Apple APR</span>
+					</div>
+				</div>
+
+				{/* THIRD ELEMENT */}
+				<div className="flex gap-6 xl:flex-col xl:gap-0.5">
+					<div className="flex items-center w-16 justify-between gap-6 xl:flex-row-reverse">
+						<span>2019</span>
+						<img
+							src="https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/illnlzrwjxt1qiknrfs3"
+							alt="dot icon"
+							loading="lazy"
+							className="h-2"
+						/>
+					</div>
+					<div className="">
+						<h3 className="font-medium text-pwhite">Technical Service</h3>
+						<span>Fix Station</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	);
+};
+
+export default Jobs;

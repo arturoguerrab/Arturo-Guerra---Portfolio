@@ -1,12 +1,11 @@
 import React from "react";
-import BrushIcon from "@mui/icons-material/Brush";
 import Box from "@mui/material/Box";
 import Backdrop from "@mui/material/Backdrop";
 import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
 import Button from "@mui/material/Button";
 import "./changeBg.css";
-import Icon from "../../../utils/Icon";
+
 
 const ChangeBg = ({ props }) => {
 	const style = {
@@ -29,11 +28,11 @@ const ChangeBg = ({ props }) => {
 	return (
 		<div className="bg-pblack overflow-hidden rounded-xl flex justify-center items-center w-12 md:w-16 ">
 			<Button className="h-full w-full rounded-xl " onClick={props.handleOpen}>
-				<Icon
-					src={
-						"https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/StateBar/xh67cuikxp084wy0tony"
-					}
-					alt={"change background icon"}
+				<img
+					src="https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/StateBar/wfozoyqsn2pom4oyyjjo"
+					alt="change background icon"
+					loading="lazy"
+					className="h-6"
 				/>
 			</Button>
 			<Modal

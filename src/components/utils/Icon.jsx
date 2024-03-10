@@ -5,7 +5,7 @@ const Icon = ({ src, alt, size, style }) => {
 		<img
 			src={`${src}`}
 			alt={`${alt}`}
-			loading="lazy"
+			
 			className={
 				(size ? `h-${size} w-${size} ` : "") + (style ? `${style})` : "")
 			}
