@@ -59,8 +59,8 @@
 	}
 }
 
-.prueba {
-	color: #f41eff;
+.indicator div {
+	display: inline;
 }
 
 .swiper {

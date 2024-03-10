@@ -1,31 +1,41 @@
 import React from "react";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Divider } from "@mui/material";
 import DownBarButtons from "./DownBarButtons/DownBarButtons";
 
 const DownBar = () => {
-	const style = {
-		footer: "fixed bottom-8 w-full left-0 h-14 flex justify-center z-10",
-		downBar:
-			"glassmorphism w-72 h-full rounded-xl flex justify-evenly gap-1.5 ",
-	};
-
 	return (
-		<footer className={style.footer}>
-			<div className={style.downBar}>
+		<footer className="fixed bottom-8 w-full left-0 h-[62px] flex justify-center z-10 ">
+			<div className="glassmorphism w-72 h-full rounded-xl flex justify-evenly gap-1.5 overflow-hidden ">
 				<div className="grid grid-cols-3 gap-1.5 p-1.5  w-3/5 ">
-					<DownBarButtons to={'profile'} className={'bg-blue-600'}/>
-					<DownBarButtons to={'experience'} className={'bg-sky-600'}/>
-					<DownBarButtons to={'contact'} className={'bg-sky-400'}/>
+					<DownBarButtons to={"profile"} />
+					<DownBarButtons to={"experience"} />
+					<DownBarButtons to={"contact"} />
 				</div>
 				<Divider orientation="vertical" variant="middle" flexItem />
 				<div className="grid grid-cols-2 gap-1.5 p-1.5 w-2/5">
-					<a href="https://github.com/arturoguerrab" target="_blank" className={" flex justify-center items-center rounded-xl text-white bg-gray-700"}>
-						<GitHubIcon />
+					<a
+						href="https://github.com/arturoguerrab"
+						target="_blank"
+						className=" flex justify-center items-center rounded-xl"
+					>
+						<img
+							src="https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/Dock/p7yb1pffjqirvaetq1c2"
+							alt="github icon"
+							loading="lazy"
+							className="w-10 h-10"
+						/>
 					</a>
-					<a href="https://www.linkedin.com/in/arturoguerrab/" target="_blank" className={ " flex justify-center items-center rounded-xl text-white bg-blue-500 "}>
-						<LinkedInIcon />
+					<a
+						href="https://www.linkedin.com/in/arturoguerrab/"
+						target="_blank"
+						className=" flex justify-center items-center rounded-xl"
+					>
+						<img
+							src="https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/Dock/nqdbmlemarcbrem52noy"
+							alt="linkedin icon"
+							loading="lazy"
+							className="w-10 h-10"
+						/>
 					</a>
 				</div>
 			</div>
