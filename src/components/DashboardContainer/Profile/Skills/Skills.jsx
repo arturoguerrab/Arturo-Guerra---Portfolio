@@ -23,19 +23,17 @@ const Skills = ({ props }) => {
 				/>
 			</div>
 			<div className="glassWhite h-3/4 lg:h-3/5 xl:h-3/4 2xl:h-3/5  rounded-b-3xl p-6 grid grid-cols-4 lg:grid-cols-7 xl:grid-cols-4 2xl:grid-cols-7 place-items-center  ">
-				{props.stack == ""
-					? props.skeleton(14)
-					: props.stack.map((e) => {
-							return (
-								<img
-									className="h-[3.25rem] lg:w-16 lg:h-16 xl:w-12 xl:h-12 2xl:h-16 2xl:w-16 "
-									src={e.img}
-									alt={e.name + " icon"}
-									key={e.name}
-									loading="lazy"
-								/>
-							);
-					  })}
+				{props.stack.map((e) => {
+					return (
+						<img
+							className="h-[3.25rem] lg:w-16 lg:h-16 xl:w-12 xl:h-12 2xl:h-16 2xl:w-16 "
+							src={e.img}
+							alt={e.name + " icon"}
+							key={e.name}
+							loading="lazy"
+						/>
+					);
+				})}
 			</div>
 		</div>
 	);
