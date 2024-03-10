@@ -1,69 +1,83 @@
 import Divider from "@mui/material/Divider";
 import React from "react";
+import ButtonLink from "../../../utils/ButtonLink";
+import { GitHub } from "@mui/icons-material";
 
 const Whimsy = () => {
+	const stack = [
+		{
+			name: "JavaScript",
+			img: "https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/Stack/utm7ukexzfssbgjohchg",
+		},
+
+		{
+			name: "CSS",
+			img: "https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/Stack/j9jmek0d25izwhxgy58o",
+		},
+
+		{
+			name: "SASS",
+			img: "https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/Stack/awltdsz0wr5dts9l3llw",
+		},
+
+		{
+			name: "Bootstrap",
+			img: "https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/Stack/sp9ycbb47zytgqmpukfs",
+		},
+
+		{
+			name: "HTML",
+			img: "https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/Stack/fd2yg4oqdkwrmzkzyamb",
+		},
+	];
+
 	return (
 		<div className="h-full ">
-			<div className="bg-[url('https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/ularpmrcqbfk0zc9z17g')] bg-cover  h-2/5 rounded-t-3xl p-6 flex justify-end ">
+			<div className="bg-[url('https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/ularpmrcqbfk0zc9z17g')] bg-cover  h-56 rounded-t-3xl p-5 flex justify-end ">
 				<img
-					className="w-6 h-6"
-					src="https://cdn-icons-png.freepik.com/512/6915/6915987.png"
-					alt=""
+					className="h-5"
+					src="https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/iconos%20de%20tarjeta/pchxneqiokx1pqmn3fyo"
+					alt="image of the project Whimsy"
+					loading="lazy"
 				/>
 			</div>
-			<div className="bg-[#ffffffa6] h-3/5 rounded-b-3xl p-6 flex flex-col justify-between  ">
-				<div>
-					<h3 className="text-green-400 font-semibold">Projects</h3>
-					<h2 className="font-bold text-3xl">Whimsy</h2>
-					<span className="text-sm font-light text-gray-400 ">
+			<div className="bg-pwhite h-2/4 rounded-b-3xl p-5 flex flex-col justify-between  ">
+				<div className="flex flex-col">
+					<h3 className="text-pgreen font-semibold text-sm">PROJECTS</h3>
+					<h2 className="font-bold text-2xl">Whimsy</h2>
+					<span className="text-sm font-light text-pgray ">
 						Lorem, ipsum dolor{" "}
 					</span>
 				</div>
 				<div className="flex justify-between items-center">
-					<p className="w-4/6 text-xs">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
-						voluptas!
+					<p className="w-4/6 text-sm">
+						I am a frontend developer with experience in React. I'm good at HTML
+						and CSS
 					</p>
-					<button className="bg-green-400 rounded-full text-white font-bold w-20 h-7">
-						Visit
-					</button>
+					<ButtonLink to={"https://whimsystore.netlify.app/"} text={"Visit"} />
 				</div>
 				<Divider />
 				<div className="flex items-center justify-between ">
 					<div className=" flex gap-3">
-						<img
-							className="w-6 h-6"
-							src="https://cdn-icons-png.freepik.com/512/6915/6915987.png"
-							alt=""
-						/>
-						<img
-							className="w-6 h-6"
-							src="https://cdn-icons-png.freepik.com/512/6915/6915987.png"
-							alt=""
-						/>
-						<img
-							className="w-6 h-6"
-							src="https://cdn-icons-png.freepik.com/512/6915/6915987.png"
-							alt=""
-						/>
-						<img
-							className="w-6 h-6"
-							src="https://cdn-icons-png.freepik.com/512/6915/6915987.png"
-							alt=""
-						/>
-						<img
-							className="w-6 h-6"
-							src="https://cdn-icons-png.freepik.com/512/6915/6915987.png"
-							alt=""
-						/>
+						{stack.map((e) => {
+							return (
+								<img
+									className="h-5 shadow-md rounded-md "
+									src={e.img}
+									alt={e.name + " icon"}
+									key={e.name}
+									loading="lazy"
+								/>
+							);
+						})}
 					</div>
-					<a href="#" className="text-xs flex gap-1 items-center ">
-						<img
-							className="w-3 h-3"
-							src="https://cdn-icons-png.freepik.com/512/6915/6915987.png"
-							alt=""
-						/>
-						Github
+					<a
+						href="https://github.com/arturoguerrab/Whimsy-Store-JS"
+						className="text-sm text-center flex items-center text-pgray "
+						target="_blank"
+					>
+						<GitHub sx={{ height: 16 }} />
+						Github {">"}
 					</a>
 				</div>
 			</div>

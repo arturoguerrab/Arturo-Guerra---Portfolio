@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -8,24 +8,25 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Pagination } from "swiper/modules";
+import ButtonLink from "../../../utils/ButtonLink";
 
 const Certification = () => {
 	return (
 		<div className="h-full">
-			<div className="bg-black h-2/6 flex justify-between p-5  rounded-t-3xl ">
+			<div className="bg-pblack h-20 xl:h-24 flex justify-between p-5 xl:p-8 rounded-t-3xl ">
 				<div>
-					<h3 className="text-green-400 font-semibold text-xs">
+					<h3 className="text-pgreen font-semibold text-xs xl:text-sm">
 						CERTIFICATION
 					</h3>
-					<h2 className="font-bold text-xl text-white">MERN Stack</h2>
+					<h2 className="font-bold text-2xl text-white">MERN Stack</h2>
 				</div>
 				<img
-					className="w-6 h-6"
-					src="https://cdn-icons-png.freepik.com/512/6915/6915987.png"
-					alt=""
+					className="h-5"
+					src="https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/iconos%20de%20tarjeta/asp4evuo55net3m3z5dv"
+					alt="certification icon"
 				/>
 			</div>
-			<div className="bg-[#000000b5] h-4/6 p-3 rounded-b-3xl ">
+			<div className="bg-[#121212d1] h-4/6 p-5 pt-2 xl:p-8 xl:pt-6  rounded-b-3xl ">
 				<Swiper
 					direction={"vertical"}
 					pagination={{
@@ -35,111 +36,89 @@ const Certification = () => {
 					modules={[Pagination]}
 					style={{
 						"--swiper-pagination-color": "#4ab960",
+						"--swiper-pagination-bullet-inactive-color": "#9ba5b7",
+						"--swiper-pagination-bullet-inactive-opacity": "1"
 					}}
-					className="mySwiper"
+					className="mySwiper "
 				>
-					<SwiperSlide className="flex justify-around items-center">
+					<SwiperSlide className="flex justify-start gap-8 items-center">
 						<img
-							className="w-20 h-20"
-							src="https://cdn-icons-png.freepik.com/512/6915/6915987.png"
-							alt=""
+							className="w-20 h-20 xl:w-24 rounded-xl"
+							src="https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/certifications/ooiyuc2fwnyyjmx0sraj"
+							alt="certificate image"
 						/>
-						<div className="w-2/4 xl:w-2/3  ">
-							<div className="flex flex-col gap-2 xl:flex-row  ">
+						<div className="w-36 xl:w-auto  ">
+							<div className="flex flex-col gap-2 xl:gap-10 xl:flex-row  ">
 								<div>
-									<h4 className="font-semibold text-lg   text-white ">
+									<h4 className="font-semibold text-sm xl:text-xl text-pwhite ">
 										Full Stack Development
 									</h4>
-									<span className="text-sm text-gray-300 ">
+									<span className="text-sm xl:text-base text-pgray ">
 										2023. Coderhouse
 									</span>
 								</div>
-								<button className="bg-green-400 rounded-full text-white font-bold w-20 h-7">
-									Visit
-								</button>
+								<ButtonLink to={'https://www.coderhouse.com/ar/certificados/63719990a5c2a5000e843933?lang=en'} text={'View'} />
 							</div>
-							<p className="text-white hidden xl:inline-block ">
-								I am a frontend developer with experience in React. I'm good at
-								HTML and CSS, as well as JavaScript
-							</p>
 						</div>
 					</SwiperSlide>
-					<SwiperSlide className="flex justify-around items-center">
+					<SwiperSlide className="flex justify-start gap-8 items-center">
 						<img
-							className="w-20 h-20"
-							src="https://cdn-icons-png.freepik.com/512/6915/6915987.png"
-							alt=""
+							className="w-20 h-20 xl:w-24 rounded-xl"
+							src="https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/certifications/ooiyuc2fwnyyjmx0sraj"
+							alt="certificate image"
 						/>
-						<div className="w-2/4 xl:w-2/3  ">
-							<div className="flex flex-col gap-2 xl:flex-row  ">
+						<div className="w-36 xl:w-auto  ">
+							<div className="flex flex-col gap-2 xl:gap-10 xl:flex-row  ">
 								<div>
-									<h4 className="font-semibold text-lg   text-white ">
+									<h4 className="font-semibold text-sm xl:text-xl text-pwhite ">
 										Full Stack Development
 									</h4>
-									<span className="text-sm text-gray-300 ">
+									<span className="text-sm xl:text-base text-pgray ">
 										2023. Coderhouse
 									</span>
 								</div>
-								<button className="bg-green-400 rounded-full text-white font-bold w-20 h-7">
-									Visit
-								</button>
+								<ButtonLink to={'https://www.coderhouse.com/ar/certificados/63719990a5c2a5000e843933?lang=en'} text={'View'} />
 							</div>
-							<p className="text-white hidden xl:inline-block ">
-								I am a frontend developer with experience in React. I'm good at
-								HTML and CSS, as well as JavaScript
-							</p>
 						</div>
 					</SwiperSlide>
-					<SwiperSlide className="flex justify-around items-center">
+					<SwiperSlide className="flex justify-start gap-8 items-center">
 						<img
-							className="w-20 h-20"
-							src="https://cdn-icons-png.freepik.com/512/6915/6915987.png"
-							alt=""
+							className="w-20 h-20 xl:w-24 rounded-xl"
+							src="https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/certifications/ooiyuc2fwnyyjmx0sraj"
+							alt="certificate image"
 						/>
-						<div className="w-2/4 xl:w-2/3  ">
-							<div className="flex flex-col gap-2 xl:flex-row  ">
+						<div className="w-36 xl:w-auto  ">
+							<div className="flex flex-col gap-2 xl:gap-10 xl:flex-row  ">
 								<div>
-									<h4 className="font-semibold text-lg   text-white ">
+									<h4 className="font-semibold text-sm xl:text-xl text-pwhite ">
 										Full Stack Development
 									</h4>
-									<span className="text-sm text-gray-300 ">
+									<span className="text-sm xl:text-base text-pgray ">
 										2023. Coderhouse
 									</span>
 								</div>
-								<button className="bg-green-400 rounded-full text-white font-bold w-20 h-7">
-									Visit
-								</button>
+								<ButtonLink to={'https://www.coderhouse.com/ar/certificados/63719990a5c2a5000e843933?lang=en'} text={'View'} />
 							</div>
-							<p className="text-white hidden xl:inline-block ">
-								I am a frontend developer with experience in React. I'm good at
-								HTML and CSS, as well as JavaScript
-							</p>
 						</div>
 					</SwiperSlide>
-					<SwiperSlide className="flex justify-around items-center">
+					<SwiperSlide className="flex justify-start gap-8 items-center">
 						<img
-							className="w-20 h-20"
-							src="https://cdn-icons-png.freepik.com/512/6915/6915987.png"
-							alt=""
+							className="w-20 h-20 xl:w-24 rounded-xl"
+							src="https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/certifications/ooiyuc2fwnyyjmx0sraj"
+							alt="certificate image"
 						/>
-						<div className="w-2/4 xl:w-2/3  ">
-							<div className="flex flex-col gap-2 xl:flex-row  ">
+						<div className="w-36 xl:w-auto  ">
+							<div className="flex flex-col gap-2 xl:gap-10 xl:flex-row  ">
 								<div>
-									<h4 className="font-semibold text-lg   text-white ">
+									<h4 className="font-semibold text-sm xl:text-xl text-pwhite ">
 										Full Stack Development
 									</h4>
-									<span className="text-sm text-gray-300 ">
+									<span className="text-sm xl:text-base text-pgray ">
 										2023. Coderhouse
 									</span>
 								</div>
-								<button className="bg-green-400 rounded-full text-white font-bold w-20 h-7">
-									Visit
-								</button>
+								<ButtonLink to={'https://www.coderhouse.com/ar/certificados/63719990a5c2a5000e843933?lang=en'} text={'View'} />
 							</div>
-							<p className="text-white hidden xl:inline-block ">
-								I am a frontend developer with experience in React. I'm good at
-								HTML and CSS, as well as JavaScript
-							</p>
 						</div>
 					</SwiperSlide>
 				</Swiper>

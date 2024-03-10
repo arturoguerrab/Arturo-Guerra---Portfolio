@@ -20,7 +20,7 @@ const Jobs = () => {
 			</div>
 
 			{/* SECOND SECTION */}
-			<div className=" h-4/6 p-8 pt-0 xl:p-8 text-sm text-pgray flex flex-col xl:flex-row xl:justify-between ">
+			<div className=" h-4/6 p-8 pt-0 xl:p-8 text-sm text-pgray flex flex-col xl:flex-row xl:justify-between xl:items-center">
 				{/* FIRST ELEMENT */}
 				<div className="flex  gap-6 xl:flex-col xl:gap-0.5">
 					<div className="flex items-center w-16 justify-between gap-6 xl:flex-row-reverse">

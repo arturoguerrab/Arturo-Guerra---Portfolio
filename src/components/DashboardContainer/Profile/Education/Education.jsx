@@ -53,7 +53,7 @@ const Education = () => {
 					</div>
 					<div className="">
 						<h3 className="font-medium text-pwhite">Web Development</h3>
-						<span>Coderhouse</span>
+						<span>freeCodeCamp</span>
 					</div>
 				</div>
 
