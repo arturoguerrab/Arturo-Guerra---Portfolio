@@ -53,7 +53,9 @@ const FormContainer = () => {
 			{!SendOK && !Loading ? (
 				<Form props={props} />
 			) : !SendOK && Loading ? (
-				<CircularProgress />
+				<div className="w-full flex justify-center">
+					<CircularProgress sx={{ color: '#00cc66' }} size={'3rem'}/>
+				</div>
 			) : (
 				<ResetForm handleState={handleState} />
 			)}

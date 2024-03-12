@@ -4,8 +4,7 @@ import DownBarButtons from "./DownBarButtons/DownBarButtons";
 
 const DownBar = () => {
 	return (
-		<footer className="fixed bottom-8 w-full left-0 h-[62px] flex justify-center z-10 ">
-			<div className="glassmorphism w-72 h-full rounded-xl flex justify-evenly gap-1.5 overflow-hidden ">
+		<footer className="fixed bottom-8 glassmorphism w-72 h-[62px] rounded-xl flex justify-evenly gap-1.5 overflow-hidden ">
 				<div className="grid grid-cols-3 gap-1.5 p-1.5  w-3/5 ">
 					<DownBarButtons to={"profile"} />
 					<DownBarButtons to={"experience"} />
@@ -38,7 +37,6 @@ const DownBar = () => {
 						/>
 					</a>
 				</div>
-			</div>
 		</footer>
 	);
 };

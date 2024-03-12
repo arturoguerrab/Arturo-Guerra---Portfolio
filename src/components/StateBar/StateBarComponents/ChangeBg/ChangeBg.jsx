@@ -5,7 +5,7 @@ import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
 import Button from "@mui/material/Button";
 import "./changeBg.css";
-import CloseIcon from "@mui/icons-material/Close";
+
 
 const ChangeBg = ({ props }) => {
 	const style = {
@@ -15,15 +15,15 @@ const ChangeBg = ({ props }) => {
 			left: "50%",
 			transform: "translate(-50%, -50%)",
 			width: 400,
-			bgcolor: "background.paper",
+			bgcolor: "#f5f5f5",
 			border: "1px solid rgba(255, 255, 255, 0.18)",
 			boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.37)",
-			p: 4,
-			borderRadius: "0.75rem",
+			p: 5,
+			borderRadius: "2rem",
 			display: "flex",
 			flexDirection: "column",
 			gap: "0.5rem",
-			height: 400,
+			height: 600,
 		},
 	};
 	return (
@@ -53,10 +53,15 @@ const ChangeBg = ({ props }) => {
 				<Fade in={props.open}>
 					<Box sx={style.modal}>
 						<button
-							className="w-6 h-6 -mt-6 -ms-6 flex items-center justify-center || hover:text-red-500"
+							className="w-6 h-7 -mt-4 mb-2  self-end flex items-center justify-center bg-pgray rounded-full hover:bg-red-500"
 							onClick={props.handleClose}
 						>
-							<CloseIcon fontSize="large" />
+							<img
+								src="https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/iconos%20de%20tarjeta/qtolke3wcbk8cuxppwao"
+								alt="close icon"
+								loading="lazy"
+								className="w-2 h-2"
+							/>
 						</button>
 						{props.settings.map((setting) => (
 							<button

@@ -16,7 +16,7 @@ const ChangeLanguage = ({ props }) => {
 				}
 				alt="translate icon"
 				loading="lazy"
-				className="h-6 w-6 || md:hidden "
+				className="h-6 || md:hidden "
 			/>
 			<img
 				src="https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/StateBar/j35upuybxsqyvblmynil"

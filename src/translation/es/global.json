@@ -4,6 +4,12 @@
 		"translate": "ES"
 	},
 
+	"divider": {
+		"profile": "Perfil",
+		"experience": "Proyectos & Certificaciones",
+		"contact": "Contacto"
+	},
+
 	"profile": {
 		"presentation": {
 			"sub": "Desarrollador Web Full Stack",
@@ -16,7 +22,7 @@
 		"timeline": {
 			"experience": "EXPERIENCIA",
 			"jobs": {
-				"name": "Empleos",
+				"name": "Trabajos",
 				"expert": "Experto Apple",
 				"sales": "Asesor Comercial",
 				"tech": "Servicio Técnico"
@@ -29,6 +35,7 @@
 			}
 		}
 	},
+
 	"experience": {
 		"projects": {
 			"projects": "PROYECTOS",
@@ -41,10 +48,37 @@
 				"sub": "subtitulo",
 				"description": "description in español plis"
 			},
-            "portfolio": {
+			"portfolio": {
 				"sub": "subtitulo",
 				"description": "description in español plis"
 			}
+		},
+
+		"github": {
+			"title": "Repositorio Github",
+			"sub": "subtitulo"
 		}
+	},
+
+	"contact": {
+		"name": "CONTACTO",
+		"title": "Hagamos algo ;)",
+		"sub": "subtitulo",
+        "reset":{
+            "title":"Mensaje enviado",
+            "sub":"subtitulo",
+            "button":"Listo"
+        },
+        "form":{
+            "labelName":"Nombre:",
+            "labelEmail":"Email:",
+            "labelMessage":"Mensaje:",
+            "btn":"Enviar",
+            "btnReset":"Borrar"
+        },
+        "divider":{
+            "title":"Realizado por",
+            "sub":"subtitulo"
+        }
 	}
 }

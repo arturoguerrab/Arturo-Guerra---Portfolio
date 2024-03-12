@@ -4,6 +4,12 @@
 		"translate": "EN"
 	},
 
+	"divider": {
+		"profile": "Profile",
+		"experience": "Projects & Certifications",
+		"contact": "Contact"
+	},
+
 	"profile": {
 		"presentation": {
 			"sub": "Full Stack Web Developer",
@@ -13,23 +19,24 @@
 			"skills": "SKILLS",
 			"sub": "Technologies & Languages"
 		},
-        "timeline": {
+		"timeline": {
 			"experience": "EXPERIENCE",
 			"jobs": {
-                "name":"Jobs",
-                "expert":"Apple Expert",
-                "sales":"Commercial Advisor",
-                "tech":"Technical Service"
-            },
-            "education": {
-                "name":"Education",
-                "coder":"Full Stack Web Developer",
-                "fcc":"Web Development",
-                "usm":"Civil Engineering"
-            }
+				"name": "Jobs",
+				"expert": "Apple Expert",
+				"sales": "Commercial Advisor",
+				"tech": "Technical Service"
+			},
+			"education": {
+				"name": "Education",
+				"coder": "Full Stack Web Developer",
+				"fcc": "Web Development",
+				"usm": "Civil Engineering"
+			}
 		}
 	},
-    "experience": {
+
+	"experience": {
 		"projects": {
 			"projects": "PROJECTS",
 			"button": "Visit",
@@ -37,14 +44,41 @@
 				"sub": "subtitle",
 				"description": "description in inglish plis"
 			},
-            "express": {
+			"express": {
 				"sub": "subtitle",
 				"description": "description in inglish plis"
 			},
-            "portfolio": {
+			"portfolio": {
 				"sub": "subtitle",
 				"description": "description in inglius plis"
 			}
+		},
+
+		"github": {
+			"title": "Github Repository",
+			"sub": "subtutle"
 		}
-	}
+	},
+
+    "contact":{
+        "name":"CONTACT",
+        "title":"Let's work together ;)",
+        "sub":"subtitle",
+        "reset":{
+            "title":"Message sended",
+            "sub":"subtitle",
+            "button":"Ready"
+        },
+        "form":{
+            "labelName":"Name:",
+            "labelEmail":"Email:",
+            "labelMessage":"Message:",
+            "btn":"Submit",
+            "btnReset":"Reset"
+        },
+        "divider":{
+            "title":"Powered by ",
+            "sub":"subtitle"
+        }
+    }
 }

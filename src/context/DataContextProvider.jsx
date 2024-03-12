@@ -6,7 +6,7 @@ export const DataContext = createContext();
 const DataContextProvider = ({ children }) => {
 	const [language, setLanguage] = useState(false);
 	const [location, setLocation] = useState(null);
-	const [background, setBackground] = useState('onePiece');
+	const [background, setBackground] = useState('waves');
 	
 	// Funcionalidad para el manejo de la ubicacion
 	useEffect(() => {

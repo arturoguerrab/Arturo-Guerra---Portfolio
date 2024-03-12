@@ -1,6 +1,8 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 
 const Form = ({props}) => {
+    const { t } = useTranslation("global"); 
   return (
     <form
             ref={props.refForm}
@@ -11,12 +13,12 @@ const Form = ({props}) => {
                     htmlFor="name"
                     className="bg-pwhite text-pgray text-sm rounded-xl p-2 flex"
                 >
-                    Name:
+                    {t("contact.form.labelName")}
                     <input
                         type="text"
                         id="name"
                         name="name"
-                        className="ms-2 w-full outline-none bg-pwhite"
+                        className="ms-2 w-full outline-none bg-pwhite text-black"
                         required
                         onChange={(e) =>
                             props.setEmailInfo({ ...props.EmailInfo, name: e.target.value })
@@ -27,12 +29,12 @@ const Form = ({props}) => {
                     htmlFor="email"
                     className="bg-pwhite text-pgray text-sm rounded-xl p-2 flex"
                 >
-                    Email:
+                    {t("contact.form.labelEmail")}
                     <input
                         type="email"
                         id="email"
                         name="email"
-                        className="ms-2 w-full bg-pwhite outline-none"
+                        className="ms-2 w-full bg-pwhite outline-none text-black"
                         required
                         onChange={(e) =>
                             props.setEmailInfo({
@@ -46,12 +48,12 @@ const Form = ({props}) => {
                     htmlFor="message"
                     className="bg-pwhite text-pgray text-sm rounded-xl p-2 flex"
                 >
-                    Message:
+                    {t("contact.form.labelMessage")}
                     <textarea
                         type="text"
                         id="message"
                         name="message"
-                        className="ms-2 w-full bg-pwhite text-black outline-none"
+                        className="ms-2 w-full bg-pwhite outline-none text-black"
                         cols="30"
                         rows="5"
                         required
@@ -66,12 +68,12 @@ const Form = ({props}) => {
                 <div className="flex justify-center gap-5 md:justify-end">
                     <input
                         type="reset"
-                        value={"Reset"}
+                        value={ t("contact.form.btnReset")}
                         className="bg-pgray rounded-full text-white font-bold w-20 h-7 md:h-9 md:w-28 text-sm"
                     />
                     <input
                         type="submit"
-                        value={"Submit"}
+                        value={ t("contact.form.btn")}
                         className="bg-pgreen rounded-full text-white font-bold w-20 h-7 md:h-9 md:w-28 text-sm"
                     />
                 </div>

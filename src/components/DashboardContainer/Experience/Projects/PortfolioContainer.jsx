@@ -1,11 +1,8 @@
-import Divider from "@mui/material/Divider";
 import React from "react";
-import ButtonLink from "../../../utils/ButtonLink";
-import { GitHub } from "@mui/icons-material";
 import { useTranslation } from "react-i18next";
 import Project from "./Project";
 
-const Portfolio = () => {
+const PortfolioContainer = () => {
 	const { t } = useTranslation("global");
 	const stack = [
 		{
@@ -42,4 +39,4 @@ const Portfolio = () => {
 	return <Project icons={stack} props={elements} big={true} />;
 };
 
-export default Portfolio;
+export default PortfolioContainer;

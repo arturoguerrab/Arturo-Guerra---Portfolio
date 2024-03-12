@@ -3,7 +3,7 @@ import Divider from "@mui/material/Divider";
 import ButtonLink from "../../../utils/ButtonLink";
 import { GitHub } from "@mui/icons-material";
 import { useTranslation } from "react-i18next";
-import './projects.css'
+import "./projects.css";
 
 const Project = ({ props, icons, big }) => {
 	const { t } = useTranslation("global");
@@ -11,7 +11,7 @@ const Project = ({ props, icons, big }) => {
 		<article className="h-full ">
 			<div
 				className={
-					`h-56 rounded-t-3xl p-5 flex justify-end ${props.bg} bg-cover ` +
+					`h-56 rounded-t-3xl p-5 flex justify-end ${props.bg} bg-center ` +
 					(big ? `md:h-40 md:p-8 || xl:h-56 xl:p-5 2xl:h-40 2xl:p-8` : "")
 				}
 			>
@@ -95,11 +95,17 @@ const Project = ({ props, icons, big }) => {
 					</div>
 					<a
 						href={props.repository}
-						className="text-sm text-center flex items-center text-pgray "
+						className="text-sm text-center flex items-center gap-1 text-pgray "
 						target="_blank"
 					>
 						<GitHub sx={{ height: 16 }} />
-						Github {">"}
+						Github
+						<img
+							className="h-2 w-2 "
+							src="https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/iconos%20de%20tarjeta/lhp3tyuerdbjriatxz95"
+							alt="upper icon"
+							loading="lazy"
+						/>
 					</a>
 				</div>
 			</div>

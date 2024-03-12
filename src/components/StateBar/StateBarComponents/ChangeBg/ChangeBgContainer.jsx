@@ -6,7 +6,7 @@ import ChangeBg from "./ChangeBg";
 
 const ChangeBgContainer = () => {
 	const { setBackground } = useContext(DataContext);
-	const settings = ["onePiece", "waves", "shapes",'a','n'];
+	const settings = ["waves","coolors", "shapes",'a','n','z','b','c','y'];
 
 	const [open, setOpen] = useState(false);
 	const handleOpen = () => setOpen(true);
