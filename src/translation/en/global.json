@@ -1,0 +1,50 @@
+{
+	"stateBar": {
+		"resume": "Resume",
+		"translate": "EN"
+	},
+
+	"profile": {
+		"presentation": {
+			"sub": "Full Stack Web Developer",
+			"description": "I am a frontend developer whit esperience in react"
+		},
+		"skills": {
+			"skills": "SKILLS",
+			"sub": "Technologies & Languages"
+		},
+        "timeline": {
+			"experience": "EXPERIENCE",
+			"jobs": {
+                "name":"Jobs",
+                "expert":"Apple Expert",
+                "sales":"Commercial Advisor",
+                "tech":"Technical Service"
+            },
+            "education": {
+                "name":"Education",
+                "coder":"Full Stack Web Developer",
+                "fcc":"Web Development",
+                "usm":"Civil Engineering"
+            }
+		}
+	},
+    "experience": {
+		"projects": {
+			"projects": "PROJECTS",
+			"button": "Visit",
+			"whimsy": {
+				"sub": "subtitle",
+				"description": "description in inglish plis"
+			},
+            "express": {
+				"sub": "subtitle",
+				"description": "description in inglish plis"
+			},
+            "portfolio": {
+				"sub": "subtitle",
+				"description": "description in inglius plis"
+			}
+		}
+	}
+}

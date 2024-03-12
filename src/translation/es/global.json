@@ -1,0 +1,50 @@
+{
+	"stateBar": {
+		"resume": "Currículum",
+		"translate": "ES"
+	},
+
+	"profile": {
+		"presentation": {
+			"sub": "Desarrollador Web Full Stack",
+			"description": "I am a frontend developer whit esperience in react español"
+		},
+		"skills": {
+			"skills": "HABILIDADES",
+			"sub": "Tecnologías y Lenguajes"
+		},
+		"timeline": {
+			"experience": "EXPERIENCIA",
+			"jobs": {
+				"name": "Empleos",
+				"expert": "Experto Apple",
+				"sales": "Asesor Comercial",
+				"tech": "Servicio Técnico"
+			},
+			"education": {
+				"name": "Educación",
+				"coder": "Desarrollo Web Full Stack",
+				"fcc": "Desarrollo Web",
+				"usm": "Ingeniería Civil"
+			}
+		}
+	},
+	"experience": {
+		"projects": {
+			"projects": "PROYECTOS",
+			"button": "Visitar",
+			"whimsy": {
+				"sub": "subtitulo",
+				"description": "Descripcion aqui mi pana"
+			},
+			"express": {
+				"sub": "subtitulo",
+				"description": "description in español plis"
+			},
+            "portfolio": {
+				"sub": "subtitulo",
+				"description": "description in español plis"
+			}
+		}
+	}
+}
