@@ -1,5 +1,0 @@
-Componentes por hacer
-
-1- Barra separadora de las secciones
-2- Botones visit o view
-3- icono identificaion de cada widget (arriba a la derecha)      
