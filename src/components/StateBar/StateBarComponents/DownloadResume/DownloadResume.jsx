@@ -5,7 +5,7 @@ const DownloadResume = ({ props }) => {
 	const { t } = useTranslation("global");
 	return (
 		<a
-			href={`../../public/ArturoGuerra_${props.condition()}.pdf`}
+			href={`./public/ArturoGuerra_${props.condition()}.pdf`}
 			download={`ArturoGuerra_${props.condition()}.pdf`}
 			className="w-12 flex justify-center rounded-xl bg-pgreen || sm:w-auto sm:px-3"
 		>
