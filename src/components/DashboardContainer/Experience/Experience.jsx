@@ -1,11 +1,11 @@
 import React from "react";
-import Certification from "./Certifications/Certification";
 import Repository from "./Repository/Repository";
 import SectionDivider from "../../utils/SectionDivider";
 import WhimsyContainer from "./Projects/WhimsyContainer";
 import ExpressAPIContainer from "./Projects/ExpressAPIContainer";
 import PortfolioContainer from "./Projects/PortfolioContainer";
 import { useTranslation } from "react-i18next";
+import CertificationContainer from "./Certifications/CertificationContainer";
 
 const Experience = () => {
 	const { t } = useTranslation("global");
@@ -17,7 +17,7 @@ const Experience = () => {
 					<PortfolioContainer />
 				</div>
 				<div className="col-span-1 md:col-start-2 xl:col-span-2 rounded-3xl">
-					<Certification/>
+					<CertificationContainer/>
 				</div>
 				<div className="col-span-1 row-span-2 md:row-start-3 xl:row-start-2 xl:col-start-2 2xl:col-start-3   rounded-3xl ">
 					<WhimsyContainer />

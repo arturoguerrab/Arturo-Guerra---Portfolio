@@ -7,7 +7,7 @@ const DownloadResume = ({ props }) => {
 		<a
 			href={`../../public/ArturoGuerra_${props.condition()}.pdf`}
 			download={`ArturoGuerra_${props.condition()}.pdf`}
-			className="w-12 flex justify-center rounded-xl bg-pgreen || sm:w-28"
+			className="w-12 flex justify-center rounded-xl bg-pgreen || sm:w-auto sm:px-3"
 		>
 			<button className="flex items-center gap-1.5 bg-transparent rounded-xl">
 				<img

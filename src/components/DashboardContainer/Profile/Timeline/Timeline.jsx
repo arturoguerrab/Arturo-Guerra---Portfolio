@@ -6,7 +6,7 @@ const Timeline = ({ size, title, elements }) => {
 
 	if (size) {
 		return (
-			<article className="h-full bg-pblack rounded-3xl">
+			<article className="h-full bg-[#121212fb] rounded-3xl">
 				{/* FIRST SECTION */}
 				<div className={`h-2/6 p-5 flex justify-between || 2xl:p-8`}>
 					<div>
@@ -15,7 +15,7 @@ const Timeline = ({ size, title, elements }) => {
 						>
 							{t("profile.timeline.experience")}
 						</h3>
-						<h2 className={`font-bold text-2xl text-pwhite || 2xl:text-3xl`}>
+						<h2 className={`font-bold text-2xl text-pwhite || 2xl:text-[28px]`}>
 							{title}
 						</h2>
 					</div>
@@ -38,15 +38,10 @@ const Timeline = ({ size, title, elements }) => {
 								key={e.position}
 							>
 								<div
-									className={`flex items-center w-16 justify-between gap-6 || 2xl:flex-row-reverse`}
+									className={`flex items-center w-16 gap-6 || 2xl:flex-row-reverse 2xl:gap-2 2xl:justify-end`}
 								>
-									<span>{e.year}</span>
-									<img
-										src="https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/illnlzrwjxt1qiknrfs3"
-										alt="dot icon"
-										loading="lazy"
-										className="h-2 w-2"
-									/>
+									<span className="w-9">{e.year}</span>
+									<div className="bg-pgreen rounded-full h-2 w-2"></div>
 								</div>
 								<div>
 									<h4 className="font-medium text-pwhite">{e.position}</h4>
@@ -60,14 +55,14 @@ const Timeline = ({ size, title, elements }) => {
 		);
 	}
 	return (
-		<article className="h-full bg-pblack rounded-3xl">
+		<article className="h-full bg-[#121212fb] rounded-3xl">
 			{/* FIRST SECTION */}
 			<div className={`h-2/6 p-5 flex justify-between || xl:p-8`}>
 				<div>
 					<h3 className={`text-pgreen font-semibold text-xs || xl:text-base `}>
 						{t("profile.timeline.experience")}
 					</h3>
-					<h2 className={`font-bold text-2xl text-pwhite || xl:text-3xl`}>
+					<h2 className={`font-bold text-2xl text-pwhite || xl:text-[28px]`}>
 						{title}
 					</h2>
 				</div>
@@ -90,15 +85,10 @@ const Timeline = ({ size, title, elements }) => {
 							key={e.position}
 						>
 							<div
-								className={`flex items-center w-16 justify-between gap-6 || xl:flex-row-reverse`}
+								className={`flex items-center w-16 gap-6 || xl:flex-row-reverse xl:gap-2 xl:justify-end`}
 							>
-								<span>{e.year}</span>
-								<img
-									src="https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/illnlzrwjxt1qiknrfs3"
-									alt="dot icon"
-									loading="lazy"
-									className="h-2 w-2"
-								/>
+								<span className="w-9">{e.year}</span>
+								<div className="bg-pgreen rounded-full h-2 w-2"></div>
 							</div>
 							<div>
 								<h4 className="font-medium text-pwhite">{e.position}</h4>

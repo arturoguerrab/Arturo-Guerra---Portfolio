@@ -13,9 +13,9 @@ const Contact = () => {
 					<FormContainer />
 				</div>
 			</div>
-			<div className="bg-pblack h-16 mb-8 rounded-2xl flex flex-col items-center justify-center text-pwhite">
+			<div className="bg-[#121212fb] h-16 mb-8 rounded-2xl flex flex-col items-center justify-center text-pwhite">
 				<p>{t("contact.divider.title")}<a href="https://www.linkedin.com/in/arturoguerrab/" className="font-bold" target="_blank">Arturo Guerra </a></p>
-				<span className=" ">{t("contact.divider.sub")}</span>
+				<span className="text-sm">{t("contact.divider.sub")}</span>
 			</div>
 		</div>
 	);

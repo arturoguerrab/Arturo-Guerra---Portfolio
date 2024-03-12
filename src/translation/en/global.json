@@ -13,7 +13,7 @@
 	"profile": {
 		"presentation": {
 			"sub": "Full Stack Web Developer",
-			"description": "I am a frontend developer whit esperience in react"
+			"description": "Hi! My name is Arturo, I have IT knowledges (hardware & software), libraries and functional frameworks with different technologies, relational and no relational database. Always looking to lean more and unlock my full potencial"
 		},
 		"skills": {
 			"skills": "SKILLS",
@@ -23,7 +23,7 @@
 			"experience": "EXPERIENCE",
 			"jobs": {
 				"name": "Jobs",
-				"expert": "Apple Expert",
+				"expert": "Genius/Trainer",
 				"sales": "Commercial Advisor",
 				"tech": "Technical Service"
 			},
@@ -57,6 +57,17 @@
 		"github": {
 			"title": "Github Repository",
 			"sub": "subtutle"
+		},
+		"certification":{
+			"name":"CERTIFICATION",
+			"btn":"View",
+			"web":"Web Development",
+			"js":"JavaScript",
+			"react":"ReactJS",
+			"back":"Backend Programming",
+			"full":"Full Stack Development",
+			"sql":"SQL Databases"
+
 		}
 	},
 

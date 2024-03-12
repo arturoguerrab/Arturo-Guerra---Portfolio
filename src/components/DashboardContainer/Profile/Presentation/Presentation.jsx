@@ -21,7 +21,7 @@ const Presentation = () => {
 					loading="lazy"
 				/>
 			</div>
-			<div className="h-full p-5 flex flex-col gap-3 rounded-b-3xl bg-pwhite || lg:w-4/6 lg:p-8 lg:justify-between lg:rounded-none lg:rounded-r-3xl">
+			<div className="h-full p-5 flex flex-col gap-3 rounded-b-3xl bg-pwhite || lg:w-4/6 lg:p-8 lg:justify-around lg:rounded-none lg:rounded-r-3xl">
 				<img
 					className="h-5 w-5 self-end -mb-10 hidden || lg:inline lg:w-5"
 					src="https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/iconos%20de%20tarjeta/yfesfuir9ytbckws9li8"
@@ -46,7 +46,7 @@ const Presentation = () => {
 				<p className="text-sm || lg:text-base ">
 					{t("profile.presentation.description")}
 				</p>
-				<div className="flex flex-col pt-2.5 gap-3">
+				<div className="flex justify-between items-center pt-2.5 gap-3">
 					<div className="flex h-5 gap-4 || lg:h-6">
 						<a href="https://github.com/arturoguerrab" target="_blank">
 							<img

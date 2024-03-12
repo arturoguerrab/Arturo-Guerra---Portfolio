@@ -6,29 +6,29 @@
 
 	"divider": {
 		"profile": "Perfil",
-		"experience": "Proyectos & Certificaciones",
+		"experience": "Proyectos y Certificaciones",
 		"contact": "Contacto"
 	},
 
 	"profile": {
 		"presentation": {
 			"sub": "Desarrollador Web Full Stack",
-			"description": "I am a frontend developer whit esperience in react español"
+			"description": "Hola! Mi nombre es Arturo. Tengo conocimientos en IT (hardware y software), librerías y frameworks funcionales con distintas tecnologías, bases de datos relacionales y no relacionales. Siempre en búsqueda de expandir mis conocimientos y desarrollar mi potencial"
 		},
 		"skills": {
-			"skills": "HABILIDADES",
+			"skills": "SKILLS",
 			"sub": "Tecnologías y Lenguajes"
 		},
 		"timeline": {
 			"experience": "EXPERIENCIA",
 			"jobs": {
 				"name": "Trabajos",
-				"expert": "Experto Apple",
+				"expert": "Experto/Capacitador",
 				"sales": "Asesor Comercial",
 				"tech": "Servicio Técnico"
 			},
 			"education": {
-				"name": "Educación",
+				"name": "Estudios",
 				"coder": "Desarrollo Web Full Stack",
 				"fcc": "Desarrollo Web",
 				"usm": "Ingeniería Civil"
@@ -57,12 +57,22 @@
 		"github": {
 			"title": "Repositorio Github",
 			"sub": "subtitulo"
+		},
+		"certification":{
+			"name":"CERTIFICACION",
+			"btn":"Ver",
+			"web":"Desarrollo Web",
+			"js":"JavaScript",
+			"react":"ReactJS",
+			"back":"Programacion Backend",
+			"full":"Desarrollo Full Stack",
+			"sql":"Bases de datos SQL"
 		}
 	},
 
 	"contact": {
 		"name": "CONTACTO",
-		"title": "Hagamos algo ;)",
+		"title": "Trabajemos juntos ;)",
 		"sub": "subtitulo",
         "reset":{
             "title":"Mensaje enviado",
@@ -77,7 +87,7 @@
             "btnReset":"Borrar"
         },
         "divider":{
-            "title":"Realizado por",
+            "title":"Realizado por ",
             "sub":"subtitulo"
         }
 	}

@@ -5,7 +5,7 @@ const SectionDivider = ({ section, title }) => {
 	return (
 		<div className="glassDark h-10 mb-8 rounded-2xl flex justify-between items-center px-5">
 			<IndicatorsPic section={section} />
-			<span className="font-bold text-pwhite ">{title}</span>
+			<span className="font-bold text-xl text-pwhite ">{title}</span>
 		</div>
 	);
 };

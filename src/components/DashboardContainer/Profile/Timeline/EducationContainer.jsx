@@ -8,7 +8,7 @@ const EducationContainer = () => {
 		{
 			year: 2023,
 			position: t("profile.timeline.education.coder"),
-			site: "CoderHouse",
+			site: "Coderhouse",
 		},
 		{
 			year: 2020,
@@ -18,7 +18,7 @@ const EducationContainer = () => {
 		{
 			year: 2016,
 			position: t("profile.timeline.education.usm"),
-			site: "Universidad Santa Maria",
+			site: "Universidad Santa María",
 		},
 	];
 	return <Timeline elements={education} size={true} title={t("profile.timeline.education.name")} />;

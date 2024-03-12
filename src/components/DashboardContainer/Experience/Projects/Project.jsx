@@ -95,7 +95,7 @@ const Project = ({ props, icons, big }) => {
 					</div>
 					<a
 						href={props.repository}
-						className="text-sm text-center flex items-center gap-1 text-pgray "
+						className="text-base text-center flex items-center gap-1 text-pgray "
 						target="_blank"
 					>
 						<GitHub sx={{ height: 16 }} />
