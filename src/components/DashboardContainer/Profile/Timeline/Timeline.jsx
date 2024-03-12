@@ -1,27 +1,21 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
-const Timeline = ({ education, title, elements }) => {
+const Timeline = ({ size, title, elements }) => {
 	const { t } = useTranslation("global");
-
-	let timeline = "xl:";
-
-	if (education) {
-		timeline = "2xl:";
-	}
 
 	return (
 		<article className="h-full bg-pblack rounded-3xl">
 			{/* FIRST SECTION */}
-			<div className={`h-2/6 p-5 flex justify-between || ${timeline}p-8`}>
+			<div className={`h-2/6 p-5 flex justify-between || ${size}p-8`}>
 				<div>
 					<h3
-						className={`text-pgreen font-semibold text-xs || ${timeline}text-base `}
+						className={`text-pgreen font-semibold text-xs || ${size}text-base `}
 					>
 						{t("profile.timeline.experience")}
 					</h3>
 					<h2
-						className={`font-bold text-2xl text-pwhite || ${timeline}text-3xl`}
+						className={`font-bold text-2xl text-pwhite || ${size}text-3xl`}
 					>
 						{title}
 					</h2>
@@ -36,16 +30,16 @@ const Timeline = ({ education, title, elements }) => {
 
 			{/* SECOND SECTION */}
 			<div
-				className={`h-4/6 p-8 pt-0 text-sm text-pgray flex flex-col ${timeline}p-8 ${timeline}flex-row ${timeline}justify-between ${timeline}items-center`}
+				className={`h-4/6 p-8 pt-0 text-sm text-pgray flex flex-col ${size}p-8 ${size}flex-row ${size}justify-between ${size}items-center`}
 			>
 				{elements.map((e) => {
 					return (
 						<div
-							className={`flex gap-6 || ${timeline}flex-col ${timeline}gap-0.5`}
+							className={`flex gap-6 || ${size}flex-col ${size}gap-0.5`}
 							key={e.position}
 						>
 							<div
-								className={`flex items-center w-16 justify-between gap-6 || ${timeline}flex-row-reverse`}
+								className={`flex items-center w-16 justify-between gap-6 || ${size}flex-row-reverse`}
 							>
 								<span>{e.year}</span>
 								<img

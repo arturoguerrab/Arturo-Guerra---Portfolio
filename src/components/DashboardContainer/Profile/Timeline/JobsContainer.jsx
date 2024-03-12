@@ -21,7 +21,7 @@ const JobsContainer = () => {
 			site: "Fix Station",
 		},
 	];
-	return <Timeline elements={jobs} title={t("profile.timeline.jobs.name")} />;
+	return <Timeline elements={jobs} size={'xl:'} title={t("profile.timeline.jobs.name")} />;
 };
 
 export default JobsContainer;
