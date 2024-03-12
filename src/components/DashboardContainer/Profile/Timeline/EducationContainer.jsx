@@ -21,7 +21,7 @@ const EducationContainer = () => {
 			site: "Universidad Santa Maria",
 		},
 	];
-	return <Timeline elements={education} size={'2xl:'} title={t("profile.timeline.education.name")} />;
+	return <Timeline elements={education} size={true} title={t("profile.timeline.education.name")} />;
 }
 
 export default EducationContainer
