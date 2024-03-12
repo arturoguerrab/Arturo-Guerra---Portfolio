@@ -32,7 +32,7 @@ const ExpressAPIContainer = () => {
 	];
 
 	const elements = {
-		bg: "https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/cceomr1gao9nstahgniy",
+		bg: "express",
 		title: "Express API",
 		subtitle: t("experience.projects.express.sub"),
 		description: t("experience.projects.express.description"),

@@ -30,7 +30,7 @@ const Portfolio = () => {
 		},
 	];
 	const elements = {
-		bg: "https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/ea6lanvn9rnatva9ws4m",
+		bg: "portfolio",
 		title: "Porfolio",
 		subtitle: t("experience.projects.portfolio.sub"),
 		description: t("experience.projects.portfolio.description"),

@@ -36,7 +36,7 @@ const Timeline = ({ education, title, elements }) => {
 
 			{/* SECOND SECTION */}
 			<div
-				className={`h-4/6 p-8 pt-0 text-sm text-pgray flex flex-col || ${timeline}p-8 ${timeline}flex-row ${timeline}justify-between ${timeline}items-center`}
+				className={`h-4/6 p-8 pt-0 text-sm text-pgray flex flex-col ${timeline}p-8 ${timeline}flex-row ${timeline}justify-between ${timeline}items-center`}
 			>
 				{elements.map((e) => {
 					return (

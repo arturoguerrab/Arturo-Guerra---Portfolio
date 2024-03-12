@@ -32,7 +32,7 @@ const WhimsyContainer = () => {
 	];
 
 	const elements = {
-		bg:"https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/ularpmrcqbfk0zc9z17g",
+		bg:"whimsy",
 		title:"Whimsy",
 		subtitle:t("experience.projects.whimsy.sub"),
 		description:t("experience.projects.whimsy.description"),
