@@ -6,7 +6,7 @@ const Timeline = ({ size, title, elements }) => {
 
 	if (size) {
 		return (
-			<article className="h-full bg-[#121212fb] rounded-3xl">
+			<article className="h-full bg-[#121212f0] rounded-3xl">
 				{/* FIRST SECTION */}
 				<div className={`h-2/6 p-5 flex justify-between || 2xl:p-8`}>
 					<div>

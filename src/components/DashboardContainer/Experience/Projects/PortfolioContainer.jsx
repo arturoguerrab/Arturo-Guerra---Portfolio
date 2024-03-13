@@ -28,7 +28,7 @@ const PortfolioContainer = () => {
 	];
 	const elements = {
 		bg: "portfolio",
-		title: "Porfolio",
+		title: "Portfolio",
 		subtitle: t("experience.projects.portfolio.sub"),
 		description: t("experience.projects.portfolio.description"),
 		button: t("experience.projects.button"),

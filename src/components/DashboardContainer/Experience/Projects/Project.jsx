@@ -11,7 +11,7 @@ const Project = ({ props, icons, big }) => {
 		<article className="h-full ">
 			<div
 				className={
-					`h-56 rounded-t-3xl p-5 flex justify-end ${props.bg} bg-center ` +
+					`h-56 rounded-t-3xl p-5 flex justify-end ${props.bg} bg-cover bg-center ` +
 					(big ? `md:h-40 md:p-8 || xl:h-56 xl:p-5 2xl:h-40 2xl:p-8` : "")
 				}
 			>
@@ -28,7 +28,7 @@ const Project = ({ props, icons, big }) => {
 					(big ? "md:h-72 md:p-8 || xl:h-2/4 xl:p-5 || 2xl:h-72 2xl:p-8" : "")
 				}
 			>
-				<div className="flex flex-col">
+				<div className="flex flex-col -mb-1">
 					<h3
 						className={
 							"text-pgreen font-semibold text-xs " +
@@ -49,18 +49,18 @@ const Project = ({ props, icons, big }) => {
 					</h2>
 					<span
 						className={
-							"text-sm font-light text-pgray " +
+							"text-sm text-pgray " +
 							(big ? "md:text-base xl:text-sm 2xl:text-base" : "")
 						}
 					>
 						{props.subtitle}
 					</span>
 				</div>
-				<div className="flex justify-between items-center">
+				<div className="flex justify-between items-center mb-3">
 					<p
 						className={
-							"w-4/6 text-sm " +
-							(big ? "md:text-base xl:text-sm 2x:text-base" : "")
+							"w-4/6 text-xs " +
+							(big ? "md:text-base xl:text-xs 2xl:text-base" : "")
 						}
 					>
 						{props.description}
@@ -95,13 +95,13 @@ const Project = ({ props, icons, big }) => {
 					</div>
 					<a
 						href={props.repository}
-						className="text-base text-center flex items-center gap-1 text-pgray "
+						className="text-sm text-center flex items-center gap-1 text-pgray "
 						target="_blank"
 					>
 						<GitHub sx={{ height: 16 }} />
 						Github
 						<img
-							className="h-2 w-2 "
+							className="h-2 w-2 ms-2"
 							src="https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/iconos%20de%20tarjeta/lhp3tyuerdbjriatxz95"
 							alt="upper icon"
 							loading="lazy"

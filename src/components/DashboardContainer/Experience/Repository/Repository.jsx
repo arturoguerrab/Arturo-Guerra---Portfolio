@@ -16,17 +16,17 @@ const Repository = () => {
 				/>
 
 				<div className="flex flex-col justify-between h-full w-full p-5 2xl:p-8 ">
-					<div className="flex justify-between">
+					<div className="flex justify-between -mb-4">
 						<h3 className="text-pgreen text-xs 2xl:text-base  font-semibold">{t("experience.projects.projects")}</h3>
 						<img
-							className="h-5 -mb-10"
+							className="h-5"
 							src="https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/iconos%20de%20tarjeta/ycgiiaqbiyymvrzip0qm"
 							alt="code icon"
 							loading="lazy"
 						/>
 					</div>
-					<div className="flex flex-col 2xl:h-32 justify-between 2xl:justify-normal">
-						<h2 className="font-bold text-white text-2xl 2xl:pt-5">
+					<div className="flex flex-col 2xl:h-32 justify-between">
+						<h2 className="font-bold text-white mb-1 text-2xl 2xl:pt-5">
 							{t("experience.github.title")}
 						</h2>
 						<span className="text-sm font-normal text-pgray pb-6">
@@ -35,7 +35,7 @@ const Repository = () => {
 						<ButtonLink
 							to={"https://github.com/arturoguerrab?tab=repositories"}
 							text={t("experience.projects.button")}
-							style={"2xl:text-base"}
+							style={"2xl:text-base -mt-3"}
 						/>
 					</div>
 				</div>

@@ -25,19 +25,15 @@ const FormContainer = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 
-		const serviceId = "service_qybhjaj";
-		const templateId = "template_w2m5dmf";
-		const apikey = "mcwEF4gYPlwG9MIst";
+		const serviceId = import.meta.env.VITE_SERVICE_ID;
+		const templateId = import.meta.env.VITE_TEMPLATE_ID;
+		const apikey = import.meta.env.VITE_API_KEY;
 
-		console.log(SendOK);
 		setLoading(true);
-		setTimeout(() => {
-			setSendOk(true);
-		}, 5000);
-		// emailjs
-		// 	.sendForm(serviceId, templateId, refForm.current, apikey)
-		// 	.then((res) => setSendOk(true))
-		// 	.catch((err) => console.log(err));
+		emailjs
+			.sendForm(serviceId, templateId, refForm.current, apikey)
+			.then((res) => setSendOk(true))
+			.catch((err) => console.log(err));
 	};
 
 	const props = {
@@ -54,7 +50,7 @@ const FormContainer = () => {
 				<Form props={props} />
 			) : !SendOK && Loading ? (
 				<div className="w-full flex justify-center">
-					<CircularProgress sx={{ color: '#00cc66' }} size={'3rem'}/>
+					<CircularProgress sx={{ color: "#00cc66" }} size={"3rem"} />
 				</div>
 			) : (
 				<ResetForm handleState={handleState} />

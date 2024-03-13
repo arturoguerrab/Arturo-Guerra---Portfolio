@@ -24,7 +24,7 @@ const DownBarButtons = ({ to }) => {
 			to={`${to}`}
 			spy={true}
 			smooth={true}
-			offset={to == "profile" ? -100 : -80}
+			offset={to == "profile" ? -100 : to== 'contact' ? -80 : -80}
 			duration={500}
 			activeClass="indicator"
 		>

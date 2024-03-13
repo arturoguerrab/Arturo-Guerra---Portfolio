@@ -6,7 +6,6 @@ import Fade from "@mui/material/Fade";
 import Button from "@mui/material/Button";
 import "./changeBg.css";
 
-
 const ChangeBg = ({ props }) => {
 	const style = {
 		modal: {
@@ -23,7 +22,7 @@ const ChangeBg = ({ props }) => {
 			display: "flex",
 			flexDirection: "column",
 			gap: "0.5rem",
-			height: 600,
+			height: 400,
 		},
 	};
 	return (
@@ -69,9 +68,9 @@ const ChangeBg = ({ props }) => {
 								onClick={() => {
 									props.setBackground(setting);
 								}}
-								className={` ${setting} backgroundProps h-20 rounded-xl text-white font-semibold`}
+								className={` ${setting} backgroundProps h-20 rounded-xl shadow-md font-semibold`}
 							>
-								{setting}
+								<span className="text-pwhite bg-[#9ba5b7e2] rounded-xl p-2">{setting}</span>
 							</button>
 						))}
 					</Box>

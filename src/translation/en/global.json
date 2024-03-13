@@ -41,22 +41,22 @@
 			"projects": "PROJECTS",
 			"button": "Visit",
 			"whimsy": {
-				"sub": "subtitle",
-				"description": "description in inglish plis"
+				"sub": "A custom-made ecommerce",
+				"description": "Application developed with the bases of web programming for a personal brand"
 			},
 			"express": {
-				"sub": "subtitle",
-				"description": "description in inglish plis"
+				"sub": "A complete API for an ecommerce",
+				"description": "Management of a MongoDB database for stock control, shopping cart, and more"
 			},
 			"portfolio": {
-				"sub": "subtitle",
-				"description": "description in inglius plis"
+				"sub": "Skills compilated in widgets",
+				"description": "Application developed with ReactJS to make a portfolio inspired by the UI of an Operative System"
 			}
 		},
 
 		"github": {
 			"title": "Github Repository",
-			"sub": "subtutle"
+			"sub": "An overview of the structure of completed and ongoing projects"
 		},
 		"certification":{
 			"name":"CERTIFICATION",
@@ -74,11 +74,11 @@
     "contact":{
         "name":"CONTACT",
         "title":"Let's work together ;)",
-        "sub":"subtitle",
+        "sub":"Send me a message and I'll contact you asap",
         "reset":{
             "title":"Message sended",
-            "sub":"subtitle",
-            "button":"Ready"
+            "sub":"Thanks for your time!",
+            "button":"Finish"
         },
         "form":{
             "labelName":"Name:",
@@ -89,7 +89,7 @@
         },
         "divider":{
             "title":"Powered by ",
-            "sub":"subtitle"
+            "sub":"Buenos Aires, 2024"
         }
     }
 }

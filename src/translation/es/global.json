@@ -41,22 +41,22 @@
 			"projects": "PROYECTOS",
 			"button": "Visitar",
 			"whimsy": {
-				"sub": "subtitulo",
-				"description": "Descripcion aqui mi pana"
+				"sub": "Un ecommerce hecho a medida",
+				"description": "Aplicación desarrollada con las bases de la programación web para una marca personal"
 			},
 			"express": {
-				"sub": "subtitulo",
-				"description": "description in español plis"
+				"sub": "Una API completa para un ecommerce",
+				"description": "Manejo de una base de datos en MongoDB para control stock, carrito de compra y más"
 			},
 			"portfolio": {
-				"sub": "subtitulo",
-				"description": "description in español plis"
+				"sub": "Una recopilación de habilidades en widgets",
+				"description": "Aplicación desarrollada con ReactJS para la creación de un portafolio inspirado en la UI de un Sistema Operativo"
 			}
 		},
 
 		"github": {
 			"title": "Repositorio Github",
-			"sub": "subtitulo"
+			"sub": "Una mirada a la estructura de los proyectos finalizados y en curso"
 		},
 		"certification":{
 			"name":"CERTIFICACION",
@@ -73,11 +73,11 @@
 	"contact": {
 		"name": "CONTACTO",
 		"title": "Trabajemos juntos ;)",
-		"sub": "subtitulo",
+		"sub": "Envíame tu consulta y me comunicaré en breve",
         "reset":{
             "title":"Mensaje enviado",
-            "sub":"subtitulo",
-            "button":"Listo"
+            "sub":"¡Gracias por tu consulta!",
+            "button":"Finalizar"
         },
         "form":{
             "labelName":"Nombre:",
@@ -88,7 +88,7 @@
         },
         "divider":{
             "title":"Realizado por ",
-            "sub":"subtitulo"
+            "sub":"Buenos Aires, 2024"
         }
 	}
 }

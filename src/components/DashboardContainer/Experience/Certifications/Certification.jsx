@@ -36,11 +36,11 @@ const Certification = ({ elements }) => {
 						"--swiper-pagination-bullet-inactive-color": "#9ba5b7",
 						"--swiper-pagination-bullet-inactive-opacity": "1",
 					}}
-					className="mySwiper "
+					className="mySwiper relative z-0 "
 				>
 					{elements.map((e) => {
 						return (
-							<SwiperSlide className="grid grid-cols-3 xl:flex xl:gap-7 items-center">
+							<SwiperSlide className="grid grid-cols-3 xl:flex xl:gap-7 items-center" key={e.title}>
 								<img
 									className="w-20 h-20 xl:w-24 rounded-xl"
 									src="https://res.cloudinary.com/dbwomkmnq/image/upload/f_auto,q_auto/v1/Portfolio/certifications/ooiyuc2fwnyyjmx0sraj"

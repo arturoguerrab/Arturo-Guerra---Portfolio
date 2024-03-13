@@ -22,7 +22,7 @@ const ContactWidget = ({ children }) => {
 						<h2 className="text-2xl md:text-3xl font-bold">
 							{t("contact.title")}
 						</h2>
-						<span className="text-sm md:text-base text-pgray">
+						<span className="text-xs md:text-base text-pgray">
 						{t("contact.sub")}
 						</span>
 					</div>
